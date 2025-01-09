@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0-alpha.1/dist/tailwind.min.css" rel="stylesheet"> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-slide {
+        animation: slide 25s linear infinite;
+    }
+
+    @media (max-width: 768px) {
+        .animate-slide {
+            animation: none !important;
+        }
+    }
+</style>
+
+</head>
+
+<body class="bg-white text-gray-800   ">
+    <!-- <header class="w-full bg-gradient-to-r from-blue-800 to-indigo-900 text-white dark:bg-gray-700 shadow-md"> -->
+    <header
+        class="mx-auto ml-16 mr-16  rounded-lg bg-white  text-gray-900 shadow-md dark:bg-gray-700 dark:bg-none sticky top-0 z-50 ">
+        <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
+        <!-- bg-gradient-to-l from-lightblue to-darkblue -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+
+            <div class="text-xl font-semibold">
+                <a href="#">
+                    <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" class="h-14">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#"
+                    class="hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap text-xl  ">
+                    <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
+                <a href="#"
+                    class="hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap  text-xl">About
+                    Us</a>
+
+                <!-- Services Dropdown with Arrow -->
+                <div class="relative" id="desktop-services">
+                    <button
+                        class="flex items-center space-x-2 hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap"
+                        id="desktop-services-toggle">
+                        <span class=" text-xl">Services</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-services-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg rounded-lg w-48 mt-5"
+                        id="desktop-services-dropdown">
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-indigo-500 dark:hover:bg-cyan-700 hover:text-white hover:rounded-md  text-xl">IT
+                            &
+                            Professional</a>
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-indigo-500 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">Healthcare</a>
+                    </div>
+                </div>
+
+                <!-- Products Dropdown with Arrow -->
+                <div class="relative" id="desktop-products">
+                    <button
+                        class="flex items-center space-x-2 hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap"
+                        id="desktop-products-toggle">
+                        <span class=" text-xl">Products</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-products-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-products-dropdown">
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-indigo-500 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">IaaS</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Dropdown with Arrow -->
+                <div class="relative" id="desktop-solutions">
+                    <button
+                        class="flex items-center space-x-2 hover:text-teal-200 dark:hover:text-emerald-500go-400 transition-all duration-300 whitespace-nowrap"
+                        id="desktop-solutions-toggle">
+                        <span class=" text-xl">Solutions</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-solutions-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-solutions-dropdown">
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-indigo-500 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">SaaS
+                            & PaaS</a>
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-indigo-500 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">TaaS</a>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
+                <a href="#contact"
+                    class="hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap  text-xl ">
+                    <img src="assets/contact_us.png" class="h-8 w-8" alt="">
+                </a>
+
+            </nav>
+
+
+            <!-- Burger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle"
+                    class="text-gray-800 dark:text-gray-100 focus:outline-none bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6h16.5M3.75 12h16.5M3.75 18h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden text-slate-950 dark:text-white  bg-white dark:bg-gray-800 shadow-md z-100 ">
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">About Us</a>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
+                    id="services-toggle">
+                    Services
+                    <svg id="services-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="services-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">IT & Professional</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">Healthcare</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
+                    id="products-toggle">
+                    Products
+                    <svg id="products-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="products-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">IaaS</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
+                    id="solutions-toggle">
+                    Solutions
+                    <svg id="solutions-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="solutions-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">SaaS & PaaS</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">TaaS</a>
+                </div>
+            </div>
+
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">Careers</a>
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm">Contact Us</a>
+        </div>
+    </header>
+
+    <section id="hero-section"
+        class="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-8 scroll-pt-40 bg-cover bg-center bg-no-repeat rounded-lg"
+        style="background-image:url(assets/Hero_img4.jpg);">
+        <!-- Text Section -->
+        <div class="w-full flex flex-col items-center justify-center text-center md:mb-16 mb-10 px-4" data-aos="fade-up"
+            data-aos-duration="1000">
+            <h1
+                class="text-4xl md:text-6xl font-Poppins font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-blue-600 to-slate-900 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400 leading-tight">
+                We are professional service partners
+            </h1>
+            <p
+                class="text-lg md:text-2xl font-Poppins bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-blue-600 to-slate-900 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400 mt-4 leading-relaxed">
+                that genuinely care. Since 2014, we’ve been building powerful relationships and genuine partnerships.
+            </p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="w-full py-8" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-full flex flex-wrap justify-center gap-6 md:gap-10">
+                <div class="hover:scale-105 transform transition-all text-center">
+                    <div
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400">
+                        50
+                    </div>
+                    <div
+                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400 mt-2">
+                        Client Partners
+                    </div>
+                </div>
+                <div class="hover:scale-105 transform transition-all text-center">
+                    <div
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400">
+                        10+
+                    </div>
+                    <div
+                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400 mt-2">
+                        Years in Services
+                    </div>
+                </div>
+                <div class="hover:scale-105 transform transition-all text-center">
+                    <div
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400">
+                        5K+
+                    </div>
+                    <div
+                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-blue-500 to-purple-600 dark:from-teal-400 dark:via-pink-500 dark:to-yellow-400 mt-2">
+                        Positions Filled
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#service-section" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer">
+            <svg class="w-8 h-8 text-gray-800 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-transform"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </a>
+    </section>
+
+    <!-- bg-gradient-to-b from-[#c5eaf9] to-slate-0 -->
+    <!-- bg-gradient-to-r from-white via-cyan-50 to-sky-100  -->
+    <section id="service-section"
+        class="bg-white px-6 rounded-lg transition-shadow duration-300 h-screen flex items-center justify-center">
+        <div class="container mx-auto text-center" data-aos="fade-up">
+            <!-- Icon Wrapper -->
+            <div class="flex flex-col items-center justify-center mb-6">
+                <!-- Icon Image -->
+                <img src="assets/ipartneringiconfore2.png" alt="Service Icon" class="w-16 h-16 mb-3">
+            </div>
+
+            <!-- Our Services Title -->
+            <h2 class="text-4xl font-sans font-bold text-center text-blue-900 transition-colors duration-300 mb-4">
+                Our Services
+            </h2>
+
+            <!-- Intro Text -->
+            <p class="text-xl text-center font-sans text-gray-600 mb-16">
+                Tackling two major industries at the highest magnitude
+            </p>
+            <div class="w-24 border-t-2 border-blue-900 mx-auto -mt-10 mb-5"></div>
+
+            <!-- Service Cards -->
+            <div class="w-full lg:w-4/4 flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center">
+                <!-- Service Card 1 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300 w-full h-80 sm:h-80 md:h-80 lg:h-80 mx-auto"
+                    data-aos="fade-right" data-aos-duration="1000">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0">
+                        <img src="assets/itprofessionlaimg.jpeg" alt="IT & Professional"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 filter brightness-90 group-hover:brightness-125">
+                        <!-- Overlay for Text Visibility -->
+                        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                    </div>
+                    <!-- Text Overlay -->
+                    <div class="relative z-10 p-4 flex flex-col justify-center h-full">
+                        <h3 class="text-3xl font-semibold text-white mb-2 text-center">IT & Professional</h3>
+                        <p class="text-gray-100 text-center text-lg">
+                            Explore our offerings in IT & Professional services, tailored to meet your business needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg group transition-shadow duration-300 w-full h-80 sm:h-80 md:h-80 lg:h-80 mx-auto"
+                    data-aos="fade-left" data-aos-duration="1000">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0">
+                        <img src="assets/Healthcareimg.jpeg" alt="Healthcare"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 filter brightness-90 group-hover:brightness-110">
+                        <!-- Overlay for Text Visibility -->
+                        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                    </div>
+                    <!-- Text Overlay -->
+                    <div class="relative z-10 p-4 flex flex-col justify-center h-full">
+                        <h3 class="text-3xl font-semibold mb-2 text-white text-center">Healthcare</h3>
+                        <p class="text-gray-100 text-lg text-center">
+                            Our Healthcare solutions offer innovative approaches to enhance well-being and care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="product-section" class="py-12 lg:mt-0 mt-40  h-screen flex items-center justify-center" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Icon Wrapper -->
+            <div class="flex flex-col items-center justify-center mb-6">
+                <!-- Icon Image -->
+                <img src="assets/ipartneringiconfore2.png" alt="Service Icon" class="w-16 h-16 mb-3">
+            </div>
+
+            <!-- Title -->
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-indigo-900 font-sans" data-aos="fade-left">Our Products</h2>
+
+                <!-- Blue Dash Line with reduced width and top padding -->
+                <p class="mt-4 text-gray-700">
+                    Explore our innovative solutions designed to meet your needs.
+                </p>
+                <div class="w-24 border-t-2 border-blue-900 mx-auto pt-4 mt-5"></div>
+            </div>
+
+            <!-- Card -->
+            <div class="mt-10 flex justify-center " data-aos="fade-right">
+                <a href=""
+                    class="block w-full max-w-sm bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 rounded-md">
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="assets/Iaas_img.png" class="w-16 h-16" alt="IaaS">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 text-center">IaaS (Interview as a Service)</h3>
+                        <p class="mt-4 text-gray-600 text-center">
+                            Infrastructure as a Service (IaaS) is a cloud computing model that delivers virtualized
+                            computing resources like servers, storage, and networking over the internet. It allows
+                            businesses to scale infrastructure on demand, reducing the need for physical hardware and
+                            maintenance.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="solutin-section" class="py-16 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto text-center px-6">
+            <!-- Icon before the title -->
+            <div class="flex justify-center mb-6">
+                <img src="assets/ipartneringiconfore2.png" alt="Icon" class="w-16 h-16">
+            </div>
+
+            <!-- Title -->
+            <h2 class="text-4xl font-sans font-bold text-blue-950 mb-4" data-aos="fade-up">
+                Our Solutions
+            </h2>
+
+            <!-- Description -->
+            <p class="text-lg text-gray-600 mb-8">
+                We provide tailored, innovative solutions designed to address your business challenges, ensuring
+                efficiency and growth. Partner with us to unlock your full potential through cutting-edge strategies and
+                technology.
+            </p>
+            <div class="w-24 border-t-2 border-blue-900 mx-auto mb-6"></div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center ">
+                <!-- SaaS & PaaS Card -->
+                <a href="/saas-paas"
+                    class="bg-white lg:h-64 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-4 mx-auto">
+                    <img src="assets/Pass_img.png" alt="SaaS & PaaS" class="w-20 h-20">
+                    <div class="text-left" data-aos="fade-left">
+                        <h3 class="text-3xl font-semibold text-blue-950 mb-2">SaaS & PaaS</h3>
+                        <p class="text-gray-600">SaaS (Software as a Service) is a cloud-based software delivery model
+                            where applications are hosted by a provider and accessed over the internet. Users can use
+                            the software on a subscription basis without needing to install or maintain it on their
+                            devices.</p>
+                    </div>
+                </a>
+
+                <!-- TaaS Card -->
+                <a href="/taas"
+                    class="bg-white p-6 lg:h-64 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center space-x-4 mx-auto">
+                    <img src="assets/Tass_img.png" alt="TaaS" class="w-20 h-20">
+                    <div class="text-left" data-aos="fade-right">
+                        <h3 class="text-3xl font-semibold text-blue-950 mb-2">TaaS</h3>
+                        <p class="text-gray-600">Talent as a Service (TaaS) is a model that provides businesses with
+                            on-demand access to skilled professionals, allowing them to scale teams quickly and
+                            efficiently. It offers flexibility by enabling companies to hire talent for specific
+                            projects or roles without long-term commitments.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial-section"
+        class="dark:text-gray-900 rounded-md py-16 min-h-screen flex items-center justify-center" data-aos="fade-right">
+        <div class="container mx-auto text-center px-6">
+            <!-- Icon Wrapper -->
+            <div class="flex justify-center mb-6">
+                <!-- Icon Image -->
+                <img src="assets/ipartneringiconfore2.png" alt="Service Icon" class="w-16 h-16">
+            </div>
+
+            <h2 class="text-4xl font-sans text-blue-950 font-bold mb-4">
+                Client Testimonials
+            </h2>
+
+            <!-- Blue Dash Line -->
+            <div class="w-32 border-t-2 border-blue-900 mx-auto pt-4 mb-12"></div>
+
+            <!-- Testimonials Grid -->
+            <div class=" px-6 flex justify-center">
+                <div
+                    class="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
+
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+                        data-aos="fade-left" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <!-- <img src="assets/quest-logo.webp" alt="Quest Global Logo" class="h-12 mr-4"> -->
+
+                            <h2 class="text-xl font-sans font-bold text-blue-900">Highly Recommended!</h2>
+
+                            <!-- <span class="font-bold text-2xl text-blue-950">Quest global</span> -->
+                        </div>
+                        <p class="mb-6 text-justify">
+                            "Partnering with iPartner Consulting has been a game-changer for our staffing needs. They
+                            took
+                            the time to truly understand our requirements and delivered the right talent quickly. The
+                            candidates they provided were not only highly skilled but also a perfect cultural fit for
+                            our
+                            team.
+                        </p>
+                        <div class="flex items-center">
+                            <img src="assets/testimonial-2.jpg" alt="Sarah J" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h5 class="font-bold">Sarah J</h5>
+                                <span class="text-sm text-gray-500">HR Director</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+                        data-aos="fade-left" data-aos-delay="200">
+                        <div class="flex justify-between mb-4">
+                            <!-- <img src="assets/ontario.png" alt="Ontario Logo" class="h-12 mr-4"> -->
+
+
+                            <h2 class="text-xl font-sans font-bold text-blue-900">Trusted Partner</h2>
+
+                            <!-- <span class="font-bold text-2xl text-blue-950">Ontario</span> -->
+                        </div>
+                        <p class="mb-6 text-justify">
+                            "We had a complex project with unique skill requirements and a tight timeline. iPartner
+                            Consulting not only rose to the challenge but exceeded our expectations. Their personalized
+                            service and commitment to quality set them apart from other agencies we’ve worked with."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="assets/testimonial-4.jpg" alt="Nathan B" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h5 class="font-bold">Nathan B</h5>
+                                <span class="text-sm text-gray-500">Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+                        data-aos="fade-left" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <!-- <img src="assets/Altimetrik.png" alt="Altimetrik Logo" class="h-12 mr-4"> -->
+
+                            <h2 class="text-xl font-sans font-bold text-blue-900">Exceptional Service </h2>
+                            <!-- <span class="font-bold text-2xl text-blue-950">Altimetrik</span> -->
+                        </div>
+                        <p class="mb-6 text-justify">
+                            "iPartner Consulting is more than just a staffing agency they are a true partner in helping
+                            us
+                            achieve our goals. Their in-depth knowledge of the IT industry and quick response time have
+                            made
+                            them invaluable to our recruitment process. They not only provide skilled talent but also
+                            offer
+                            strategic insights that support our long-term vision."
+                        </p>
+                        <div class="flex items-center">
+                            <img src="assets/testimonial-3.jpg" alt="Emily M" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h5 class="font-bold">Emily M</h5>
+                                <span class="text-sm text-gray-500">Senior Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="client-section" class="py-16  dark:bg-gray-100" data-aos="fade-up ">
+        <!-- Heading -->
+        <div class="text-center mb-8">
+            <div class="flex justify-center mb-6">
+                <!-- Icon Image -->
+                <img src="assets/ipartneringiconfore2.png" alt="Service Icon" class="w-16 h-16">
+            </div>
+            <!-- <img src="assets/ipartnericon_nobg.png" alt="Service Icon" class="w-16 h-16 mb-3"> -->
+            <h2 class="text-4xl font-sans text-blue-950 font-bold">Our Client Partners</h2>
+
+        </div>
+        <div class="w-24 border-t-2 border-blue-900 mx-auto mt-10 mb-5"></div>
+
+        <div class="flex items-center justify-center dark:bg-white">
+            <div class="relative w-full overflow-x-hidden p-4 sm:p-8 max-w-7xl">
+                <!-- Mobile View: Static Grid -->
+                <div class="grid grid-cols-3 gap-4 md:hidden">
+                    <!-- First Row: 3 Logos -->
+                    <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/Altimetrik.png" class="w-full h-full object-contain p-1 mix-blend-color">
+                    </div>
+                    <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                    </div>
+                    <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/virtusa-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                    </div>
+
+                    <!-- Second Row: 3 Logos -->
+                    <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                    </div>
+                    <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                    </div>
+                    <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                    </div>
+                </div>
+
+                <!-- Desktop View: Sliding Animation -->
+                <div class="hidden md:flex animate-slide">
+                    <!-- Original logos -->
+                    <div class="flex min-w-full justify-around gap-4">
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/Altimetrik.png"
+                                class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/virtusa-logo.webp"
+                                class="w-full h-full object-contain p-1 mix-blend-overlay">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                    </div>
+
+                    <!-- Duplicate logos for seamless animation -->
+                    <div class="flex min-w-full justify-around gap-4">
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/Altimetrik.png"
+                                class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/virtusa-logo.webp"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-48 h-24 flex items-center justify-center relative">
+                            <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact-section" class="relative bg-gray-100 dark:bg-gray-700 py-16 px-6 lg:px-20 ml-16 mr-16">
+        <!-- Curved Background -->
+        <div class="absolute inset-0">
+            <svg class="w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#003366" fill-opacity="0.8"
+                    d="M0,128L60,144C120,160,240,192,360,213.3C480,235,600,245,720,234.7C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Side -->
+            <div class="space-y-6 text-center lg:text-left">
+                <h2 class="text-4xl font-extrabold text-gray-800 dark:text-gray-100 font-poppins">
+                    Let’s Build Something Great Together!
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 font-poppins">
+                    Share your details with us, and we’ll get in touch to create the best solution for your needs.
+                </p>
+                <img src="assets/Contactimgjpeg.jpeg" alt="Collaboration Illustration"
+                    class="rounded-lg shadow-lg hover:scale-105 transition-transform" />
+            </div>
+
+            <!-- Right Side: Form -->
+            <form class="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl p-8 space-y-8 relative z-10">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
+                        Contact Us
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-poppins">
+                        We’d love to hear from you!
+                    </p>
+                </div>
+
+                <!-- Form Fields -->
+                <div class="space-y-4">
+                    <!-- Name -->
+                    <div class="relative">
+                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <input type="text" name="name" placeholder="Your Name" required
+                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="relative">
+                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <input type="email" name="email" placeholder="Your Email" required
+                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div class="relative">
+                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <input type="tel" name="contact" placeholder="Your Contact No" required
+                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                    </div>
+
+                    <!-- Services Dropdown -->
+                    <div class="relative">
+                        <select name="services" required
+                            class="block w-full border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 focus:border-light-blue-500">
+                            <option value="" disabled selected class="text-gray-400">Select Required Service
+                            </option>
+                            <option value="IT & Professional Staffing">IT & Professional Staffing</option>
+                            <option value="Healthcare Staffing">Healthcare Staffing</option>
+                            <option value="IaaS">IaaS</option>
+                            <option value="SaaS & PaaS">SaaS & PaaS</option>
+                            <option value="TaaS">TaaS</option>
+                        </select>
+
+                        <!-- Dropdown Icon -->
+                        <span
+                            class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-indigo-500 dark:text-gray-300">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+
+                    <!-- Description -->
+                    <textarea name="description" rows="4" placeholder="Tell us more about your requirements" required
+                        class="w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-[#003366] to-[#66B2FF] hover:from-[#66B2FF] hover:to-[#003366] text-white font-bold py-3 px-6 rounded-lg transition font-poppins">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="footer-section">
+        <!-- Footer -->
+
+        <footer class="text-center text-lg-start bg-[#003366] dark:bg-[#3a5f8f]">
+
+            <!-- Section: Links -->
+            <section>
+                <div class="container mx-auto px-4 text-center text-md-start">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6">
+
+                        <div class="mb-4 flex flex-col items-start">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl  dark:text-black">
+                                iPartner
+                                Consulting</h6>
+                            <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
+                                <li><a href="#" class="text-white ">Home</a></li>
+                                <li><a href="#" class="text-white">About US</a></li>
+                                <li><a href="#" class="text-white">Services</a></li>
+                                <li><a href="#" class="text-white">Products</a></li>
+                                <li><a href="#" class="text-white">Solutions</a></li>
+                                <li><a href="#" class="text-white">Careers</a></li>
+                                <li><a href="#" class="text-white">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4 flex flex-col items-start">
+
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 dark:text-black">
+
+                                Products</h6>
+                            <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
+                                <li> <a href="#" class="text-white">IT & Professional Staffing</a></li>
+                                <li><a href="#" class="text-white">Healthcare Staffing</a></li>
+                                <li><a href="#" class="text-white">IaaS</a></li>
+                                <li><a href="#" class="text-white">SaaS & PaaS</a></li>
+                                <li><a href="#" class="text-white">TaSS</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4 flex flex-col items-start">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  dark:text-black">
+                                Social Media</h6>
+                            <ul class="space-y-2 pt-2 text-left">
+
+                                <li class="text-lg"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i>
+                                        Facebook</a></li>
+                                <li class="text-lg"><a href="https://www.linkedin.com/company/ipartnerconsult/"
+                                        class="text-white"> <i class="fab fa-linkedin"></i> Linkedin</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <div class="mb-4 flex flex-col items-start">
+
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  dark:text-black">
+
+                                Contact</h6>
+                            <ul class="space-y-2  pt-2 text-left">
+                                <li>
+                                    <p class="text-white"><i class="fas fa-home mr-3"></i>60 Gillingham Dr,
+                                        Suite 400
+                                        Brampton,Ontario L6X 0G9</p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><i
+                                            class="fas fa-envelope mr-3"></i>info@ipartnerconsulting.com</p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><i class="fas fa-phone mr-3"></i>+1 (647) 990 -
+                                        5090</p>
+                                </li>
+                                <!-- <li>
+                                    <p class="text-white"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+
+
+            <!-- Section: Logo, Copyright, Privacy, Terms, and Social Media -->
+            <section class="flex flex-col sm:flex-row justify-center items-center p-4 dark:bg-slate-950 bg-slate-900">
+                <!-- Company Logo -->
+                <div class="mb-4 sm:mb-0">
+                    <!-- <a href="#">
+                        <img src="https://www.ipartnerconsulting.com/assets/ipartner_consulting%20logo-white.png"
+                            alt="Company Logo" class="h-8">
+                    </a> -->
+                </div>
+
+                <div class="text-white text-center sm:text-left mb-4 sm:mb-0">
+                    <span class="text-gray-200 dark:text-gray-300">© 2024 iPartner Consulting™ All rights
+                        reserved.</span>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Privacy Policy</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Terms and
+                        Conditions</a>
+                </div>
+                <!-- <div class="flex space-x-4">
+                    <a href="#" class="text-gray-200 dark:text-gray-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-200 dark:text-gray-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-200 dark:text-gray-300">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="text-gray-200 dark:text-gray-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-200 dark:text-gray-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div> -->
+            </section>
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="javascript/script.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+
+</body>
+
+</html>
