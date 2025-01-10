@@ -94,172 +94,168 @@
 
 </head>
 
-<body  class=" w-screen bg-no-repeat mt-1"  style="background-image:url(assets/hero.jpg); opacity: 80;">
+<body class=" w-screen bg-no-repeat mt-1" style="background-image:url(assets/hero.jpg); opacity: 80;">
     <!-- <header class="w-full bg-gradient-to-r from-blue-800 to-indigo-900 text-white dark:bg-gray-700 shadow-md"> -->
-        <div class="absolute inset-0 bg-gray-950 bg-opacity-60 h-[913px] w-screen"></div>
-            <header
-            class="rounded-lg bg-white  text-gray-900 shadow-md dark:bg-gray-700 dark:bg-none sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto   ">
-            <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
-            <!-- bg-gradient-to-l from-lightblue to-darkblue -->
-            <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-                <div class="text-xl font-semibold">
-                    <a href="#">
-                        <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" class="h-14">
-                    </a>
-                </div>
-    
-                <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="#hero-section"
-                        class="hover:text-teal-200 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap text-xl  ">
-                        <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
-                    <a href="#"
-                        class="hover:text-blue-900 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap  text-xl">About
-                        Us</a>
-    
-                    <!-- Services Dropdown with Arrow -->
-                    <div class="relative" id="desktop-services">
-                        <button
-                            class="flex items-center space-x-2 hover:text-blue-900 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap"
-                            id="desktop-services-toggle">
-                            <span class=" text-xl hover:text-blue-900"><a href="#service-section">Services</a></span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-services-arrow">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                            </svg>
-                        </button>
-                        <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg rounded-lg w-48 mt-5"
-                            id="desktop-services-dropdown">
-                            <a href="ITProfessional.html"
-                                class="block px-4 py-3 hover:bg-blue-700 dark:hover:bg-cyan-700 hover:text-white hover:rounded-md  text-xl">IT
-                                &
-                                Professional</a>
-                            <a href="#"
-                                class="block px-4 py-3 hover:bg-blue-700 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">Healthcare</a>
-                        </div>
-                    </div>
-    
-                    <!-- Products Dropdown with Arrow -->
-                    <div class="relative" id="desktop-products">
-                        <button
-                            class="flex items-center space-x-2 hover:text-blue-900 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap"
-                            id="desktop-products-toggle">
-                            <span class=" text-xl"><a href="#product-section">Our Products</a></span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-products-arrow">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                            </svg>
-                        </button>
-                        <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
-                            id="desktop-products-dropdown">
-                            <a href="#"
-                                class="block px-4 py-2 hover:bg-blue-700 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">IaaS</a>
-                        </div>
-                    </div>
-    
-                    <!-- Solutions Dropdown with Arrow -->
-                    <div class="relative" id="desktop-solutions">
-                        <button
-                            class="flex items-center space-x-2 hover:text-blue-900 dark:hover:text-emerald-500go-400 transition-all duration-300 whitespace-nowrap"
-                            id="desktop-solutions-toggle">
-                            <span class=" text-xl hover:text-blue-900"> <a href="#solution-section">Solutions</a></span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-solutions-arrow">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                            </svg>
-                        </button>
-                        <div class="absolute left-0 hidden bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
-                            id="desktop-solutions-dropdown">
-                            <a href="#"
-                                class="block px-4 py-3 hover:bg-blue-700 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">SaaS
-                                & PaaS</a>
-                            <a href="#"
-                                class="block px-4 py-3 hover:bg-blue-700 dark:hover:bg-cyan-700 hover:rounded-md hover:text-white  text-xl">TaaS</a>
-                        </div>
-                    </div>
-    
-                    <a href="#"
-                        class="hover:text-blue-900 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
-                    <a href="#contact-section"
-                        class="hover:text-blue-900 dark:hover:text-emerald-500 transition-all duration-300 whitespace-nowrap text-xl">
-                        <img src="assets/contact_us.png" class="h-8 w-8 animate-ring" alt="Contact Us">
-                    </a>
-                </nav>
-    
-    
-                <!-- Burger Menu (Mobile) -->
-                <div class="md:hidden">
-                    <button id="menu-toggle"
-                        class="text-gray-800 dark:text-gray-100 focus:outline-none bg-gray-200 dark:bg-gray-600 p-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6h16.5M3.75 12h16.5M3.75 18h16.5" />
-                        </svg>
-                    </button>
-                </div>
+    <div class="absolute inset-0 bg-gray-950 bg-opacity-60 h-[913px] w-screen"></div>
+    <header
+        class="rounded-lg bg-white  text-gray-900 shadow-md  dark:bg-none sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto   ">
+        <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
+        <!-- bg-gradient-to-l from-lightblue to-darkblue -->
+        <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="text-xl font-semibold">
+                <a href="#">
+                    <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" class="h-14">
+                </a>
             </div>
-    
-            <!-- Mobile Menu -->
-            <div id="mobile-menu"
-                class="hidden md:hidden text-slate-950 dark:text-white  bg-white dark:bg-gray-800 shadow-md z-100 ">
-                <a href="#hero-section"
-                    class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">Home</a>
-                <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">About Us</a>
-    
-                <div class="relative">
-                    <button
-                        class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
-                        id="services-toggle">
-                        <a href="#service-section">Services</a>
-                        <svg id="services-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                        </svg>
-                    </button>
-                    <div id="services-dropdown" class="pl-4 hidden">
-                        <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">IT & Professional</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">Healthcare</a>
-                    </div>
-                </div>
-    
-                <div class="relative">
-                    <button
-                        class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
-                        id="products-toggle">
-                        <a href="#product-section">Our Products</a>
-                        <svg id="products-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                        </svg>
-                    </button>
-                    <div id="products-dropdown" class="pl-4 hidden">
-                        <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">IaaS</a>
-                    </div>
-                </div>
-    
-                <div class="relative">
-                    <button
-                        class="w-full text-left px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 flex justify-between items-center shadow-sm mb-2"
-                        id="solutions-toggle">
-                        <a href="#solution-section">Solutions</a>
-                        <svg id="solutions-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
-                        </svg>
-                    </button>
-                    <div id="solutions-dropdown" class="pl-4 hidden">
-                        <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">SaaS & PaaS</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700">TaaS</a>
-                    </div>
-                </div>
-    
-                <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">Careers</a>
-                <a href="#contact-section"
-                    class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm ">Contact Us</a>
-            </div>
-        </header>
 
-   
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#hero-section"
+                    class="hover:text-teal-200  transition-all duration-300 whitespace-nowrap text-xl  ">
+                    <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
+                <a href="#" class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap  text-xl">About
+                    Us</a>
+
+                <!-- Services Dropdown with Arrow -->
+                <div class="relative" id="desktop-services">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-services-toggle">
+                        <span class=" text-xl hover:text-blue-900"><a href="#service-section">Services</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-services-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg rounded-lg w-48 mt-5"
+                        id="desktop-services-dropdown">
+                        <a href="ITProfessional.html"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:text-white hover:rounded-md  text-xl">IT
+                            &
+                            Professional</a>
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-blue-700 hover:rounded-md hover:text-white  text-xl">Healthcare</a>
+                    </div>
+                </div>
+
+                <!-- Products Dropdown with Arrow -->
+                <div class="relative" id="desktop-products">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-products-toggle">
+                        <span class=" text-xl"><a href="#product-section">Our Products</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-products-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-products-dropdown">
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">IaaS</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Dropdown with Arrow -->
+                <div class="relative" id="desktop-solutions">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-solutions-toggle">
+                        <span class=" text-xl hover:text-blue-900"> <a href="#solution-section">Solutions</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-solutions-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-solutions-dropdown">
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">SaaS
+                            & PaaS</a>
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">TaaS</a>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
+                <a href="#contact-section"
+                    class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
+                    <img src="assets/contact_us.png" class="h-8 w-8 animate-ring" alt="Contact Us">
+                </a>
+            </nav>
+
+
+            <!-- Burger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle"
+                    class="text-gray-800  focus:outline-none bg-gray-200  p-2 rounded-md hover:bg-gray-300  transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6h16.5M3.75 12h16.5M3.75 18h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden text-slate-950 dark:text-white  bg-white  shadow-md z-100 ">
+            <a href="#hero-section" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">About Us</a>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="services-toggle">
+                    <a href="#service-section">Services</a>
+                    <svg id="services-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="services-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100">IT & Professional</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="products-toggle">
+                    <a href="#product-section">Our Products</a>
+                    <svg id="products-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="products-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">IaaS</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="solutions-toggle">
+                    <a href="#solution-section">Solutions</a>
+                    <svg id="solutions-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="solutions-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100">SaaS & PaaS</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">TaaS</a>
+                </div>
+            </div>
+
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
+            <a href="#contact-section" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm ">Contact Us</a>
+        </div>
+    </header>
+
+
 
     <section id="hero-section"
         class="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-8 scroll-pt-40 bg-cover bg-center bg-no-repeat rounded-lg relative ">
@@ -460,15 +456,18 @@
             <div class="w-24 border-t-2 border-blue-900 mx-auto mb-2"></div>
 
             <!-- Cards -->
-            <div class=" flex md:flex-row flex-col md:-space-x-44 md:-translate-x-40 md:translate-y-10  space-y-10 md:space-y-0 justify-center  ">
+            <div
+                class=" flex md:flex-row flex-col md:-space-x-44 md:-translate-x-40 md:translate-y-10  space-y-10 md:space-y-0 justify-center  ">
                 <!-- SaaS & PaaS Card -->
                 <a href="/saas-paas"
                     class="bg-white lg:h-96 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 items-center justify-center flex flex-col  mx-auto md:w-2/6">
-                    <img src="assets/Pass_img.png" alt="SaaS & PaaS" class="w-20 h-20  items-center justify-center flex">
+                    <img src="assets/Pass_img.png" alt="SaaS & PaaS"
+                        class="w-20 h-20  items-center justify-center flex">
 
                     <div class="text-left flex flex-col justify-center items-center" data-aos="fade-left">
                         <h3 class="text-3xl font-semibold text-blue-950 mb-2 mt-5">SaaS & PaaS</h3>
-                        <p class="text-gray-600 text-justify mt-2">SaaS (Software as a Service) is a cloud-based software delivery model
+                        <p class="text-gray-600 text-justify mt-2">SaaS (Software as a Service) is a cloud-based
+                            software delivery model
                             where applications are hosted by a provider and accessed over the internet. Users can use
                             the software on a subscription basis without needing to install or maintain it on their
                             devices.</p>
@@ -477,11 +476,12 @@
 
                 <!-- TaaS Card -->
                 <a href="/taas"
-                    class="bg-white p-6 lg:h-96 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col space-x-4 mx-auto  justify-center items-center md:w-2/6 " >
+                    class="bg-white p-6 lg:h-96 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col space-x-4 mx-auto  justify-center items-center md:w-2/6 ">
                     <img src="assets/Tass_img.png" alt="TaaS" class="w-20 h-20">
                     <div class="text-left flex flex-col items-center justify-center" data-aos="fade-right">
                         <h3 class="text-3xl font-semibold text-blue-950 mb-2 mt-5">TaaS</h3>
-                        <p class="text-gray-600 mtt-2">Talent as a Service (TaaS) is a model that provides businesses with
+                        <p class="text-gray-600 mtt-2">Talent as a Service (TaaS) is a model that provides businesses
+                            with
                             on-demand access to skilled professionals, allowing them to scale teams quickly and
                             efficiently. It offers flexibility by enabling companies to hire talent for specific
                             projects or roles without long-term commitments.</p>
@@ -627,7 +627,7 @@
 
 
 
-    <section id="client-section" class="py-16  dark:bg-gray-100" data-aos="fade-up ">
+    <section id="client-section" class="py-16 " data-aos="fade-up ">
         <!-- Heading -->
         <div class="text-center mb-8">
             <div class="flex justify-center mb-6">
@@ -722,11 +722,10 @@
     </section>
 
 
-    <section id="contact-section"
-        class="relative bg-gray-100 dark:bg-gray-700 py-16 px-6 lg:px-20 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto ">
+    <section id="contact-section" class="relative bg-gray-100 py-16 px-6 lg:px-20 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto ">
         <!-- Curved Background -->
         <div class="absolute inset-0" data-aos="fade-up">
-            <svg class="w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" >
+            <svg class="w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#003366" fill-opacity="0.8"
                     d="M0,128L60,144C120,160,240,192,360,213.3C480,235,600,245,720,234.7C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
                 </path>
@@ -736,10 +735,10 @@
         <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <!-- Left Side -->
             <div class="space-y-6 text-center lg:text-left">
-                <h2 class="text-4xl font-extrabold text-gray-800 dark:text-gray-100 font-poppins">
+                <h2 class="text-4xl font-extrabold text-gray-800  font-poppins">
                     Let’s Build Something Great Together!
                 </h2>
-                <p class="text-lg text-gray-600 dark:text-gray-300 font-poppins">
+                <p class="text-lg text-gray-600  font-poppins">
                     Share your details with us, and we’ll get in touch to create the best solution for your needs.
                 </p>
                 <img src="assets/Contactimgjpeg.jpeg" alt="Collaboration Illustration"
@@ -747,7 +746,7 @@
             </div>
 
             <!-- Right Side: Form -->
-            <form class="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl p-8 space-y-8 relative z-10" data-aos="">
+            <form class="bg-white  shadow-2xl rounded-2xl p-8 space-y-8 relative z-10" data-aos="">
                 <!-- Heading -->
                 <div class="text-center">
                     <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
@@ -766,7 +765,7 @@
                             <i class="fas fa-user"></i>
                         </span>
                         <input type="text" name="name" placeholder="Your Name" required
-                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                            class="pl-10 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Email -->
@@ -775,7 +774,7 @@
                             <i class="fas fa-envelope"></i>
                         </span>
                         <input type="email" name="email" placeholder="Your Email" required
-                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Contact Number -->
@@ -784,13 +783,13 @@
                             <i class="fas fa-phone"></i>
                         </span>
                         <input type="tel" name="contact" placeholder="Your Contact No" required
-                            class="pl-10 w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins" />
+                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Services Dropdown -->
                     <div class="relative">
                         <select name="services" required
-                            class="block w-full border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 focus:border-light-blue-500">
+                            class="block w-full border border-gray-300  bg-gray-50 text-gray-800 dark:text-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300  focus:border-light-blue-500">
                             <option value="" disabled selected class="text-gray-400">Select Required Service
                             </option>
                             <option value="IT & Professional Staffing">IT & Professional Staffing</option>
@@ -809,7 +808,7 @@
 
                     <!-- Description -->
                     <textarea name="description" rows="4" placeholder="Tell us more about your requirements" required
-                        class="w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-poppins"></textarea>
+                        class="w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800 font-poppins"></textarea>
                 </div>
 
                 <!-- Submit Button -->
@@ -835,7 +834,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6">
 
                         <div class="mb-4 flex flex-col items-start">
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl  dark:text-black">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl  ">
                                 iPartner
                                 Consulting</h6>
                             <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
@@ -851,7 +850,7 @@
 
                         <div class="mb-4 flex flex-col items-start">
 
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 dark:text-black">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
                                 Products</h6>
                             <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
@@ -864,7 +863,7 @@
                         </div>
 
                         <div class="mb-4 flex flex-col items-start">
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  dark:text-black">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  ">
                                 Social Media</h6>
                             <ul class="space-y-2 pt-2 text-left">
 
@@ -880,7 +879,7 @@
 
                         <div class="mb-4 flex flex-col items-start">
 
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  dark:text-black">
+                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
                                 Contact</h6>
                             <ul class="space-y-2  pt-2 text-left">
@@ -910,7 +909,7 @@
 
 
             <!-- Section: Logo, Copyright, Privacy, Terms, and Social Media -->
-            <section class="flex flex-col sm:flex-row justify-center items-center p-4 dark:bg-slate-950 bg-slate-900">
+            <section class="flex flex-col sm:flex-row justify-center items-center p-4  bg-slate-900">
                 <!-- Company Logo -->
                 <div class="mb-4 sm:mb-0">
                     <!-- <a href="#">
