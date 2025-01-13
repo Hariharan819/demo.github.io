@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="scroll-smooth">
-  <header
-    class="rounded-lg bg-white  text-gray-900 shadow-md  dark:bg-none sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto  ">
+  <header class="rounded-lg bg-white  text-gray-900 shadow-md  sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto  ">
     <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
     <!-- bg-gradient-to-l from-lightblue to-darkblue -->
     <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
@@ -23,17 +23,14 @@
       </div>
 
       <nav class="hidden md:flex space-x-8 items-center">
-        <a href="index.html "
-          class="hover:text-teal-200 transition-all duration-300 whitespace-nowrap text-xl  ">
+        <a href="index.html " class="hover:text-teal-200 transition-all duration-300 whitespace-nowrap text-xl  ">
           <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
-        <a href="#"
-          class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap  text-xl">About
+        <a href="#" class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap  text-xl">About
           Us</a>
 
         <!-- Services Dropdown with Arrow -->
         <div class="relative" id="desktop-services">
-          <button
-            class="flex items-center space-x-2 hover:text-blue-900 transition-all duration-300 whitespace-nowrap"
+          <button class="flex items-center space-x-2 hover:text-blue-900 transition-all duration-300 whitespace-nowrap"
             id="desktop-services-toggle">
             <span class=" text-xl hover:text-blue-900"><a href="#service-section">Services</a></span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -41,22 +38,19 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
             </svg>
           </button>
-          <div
-            class="absolute left-0 hidden bg-white text-gray-800  shadow-lg rounded-lg w-48 mt-5"
+          <div class="absolute left-0 hidden bg-white text-gray-800  shadow-lg rounded-lg w-48 mt-5"
             id="desktop-services-dropdown">
-            <a href="#"
-              class="block px-4 py-3 hover:bg-blue-700  hover:text-white hover:rounded-md  text-xl">IT
+            <a href="#" class="block px-4 py-3 hover:bg-blue-700  hover:text-white hover:rounded-md  text-xl">IT
               &
               Professional</a>
-            <a href="#"
+            <a href="Healthcare.html"
               class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">Healthcare</a>
           </div>
         </div>
 
         <!-- Products Dropdown with Arrow -->
         <div class="relative" id="desktop-products">
-          <button
-            class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+          <button class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
             id="desktop-products-toggle">
             <span class=" text-xl"><a href="#product-section">Our Products</a></span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -64,18 +58,15 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
             </svg>
           </button>
-          <div
-            class="absolute left-0 hidden bg-white text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
+          <div class="absolute left-0 hidden bg-white text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
             id="desktop-products-dropdown">
-            <a href="#"
-              class="block px-4 py-2 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">IaaS</a>
+            <a href="#" class="block px-4 py-2 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">IaaS</a>
           </div>
         </div>
 
         <!-- Solutions Dropdown with Arrow -->
         <div class="relative" id="desktop-solutions">
-          <button
-            class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+          <button class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
             id="desktop-solutions-toggle">
             <span class=" text-xl hover:text-blue-900"> <a href="#solution-section">Solutions</a></span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -83,21 +74,16 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
             </svg>
           </button>
-          <div
-            class="absolute left-0 hidden bg-white  text-gray-800 dark:text-gray-200 shadow-lg  rounded-lg w-48 mt-5"
+          <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
             id="desktop-solutions-dropdown">
-            <a href="#"
-              class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">SaaS
+            <a href="#" class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">SaaS
               & PaaS</a>
-            <a href="#"
-              class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">TaaS</a>
+            <a href="#" class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">TaaS</a>
           </div>
         </div>
 
-        <a href="#"
-          class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
-        <a href="#contactlink"
-          class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
+        <a href="#" class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
+        <a href="#contactlink" class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
           <img src="assets/contact_us.png" class="h-8 w-8 animate-ring" alt="Contact Us">
         </a>
       </nav>
@@ -116,14 +102,12 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu"
-      class="hidden md:hidden text-slate-950 dark:text-white  bg-whiteshadow-md z-100 ">
-      <a href="#hero-section" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
+    <div id="mobile-menu" class="hidden md:hidden text-slate-950   bg-whiteshadow-md z-100 ">
+      <a href="index.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
       <a href="#" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">About Us</a>
 
       <div class="relative">
-        <button
-          class="w-full text-left px-4 py-2 hover:bg-indigo-100 flex justify-between items-center shadow-sm mb-2"
+        <button class="w-full text-left px-4 py-2 hover:bg-indigo-100 flex justify-between items-center shadow-sm mb-2"
           id="services-toggle">
           <a href="#service-section">Services</a>
           <svg id="services-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -132,14 +116,13 @@
           </svg>
         </button>
         <div id="services-dropdown" class="pl-4 hidden">
-          <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">IT & Professional</a>
-          <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
+          <a href="ITProfessional.html" class="block px-4 py-2 hover:bg-indigo-100 ">IT & Professional</a>
+          <a href="Healthcare.html" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
         </div>
       </div>
 
       <div class="relative">
-        <button
-          class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+        <button class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
           id="products-toggle">
           <a href="#product-section">Our Products</a>
           <svg id="products-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -153,8 +136,7 @@
       </div>
 
       <div class="relative">
-        <button
-          class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+        <button class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
           id="solutions-toggle">
           <a href="#solution-section">Solutions</a>
           <svg id="solutions-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -168,7 +150,7 @@
         </div>
       </div>
 
-      <a href="#" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
+      <a href="Careers.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
       <a href="#contact-section" class="block px-4 py-2 hover:bg-indigo-100 shadow-sm ">Contact
         Us</a>
     </div>
@@ -176,7 +158,7 @@
 
 
 
-  <section class="container mx-auto px-4 py-16 relative h-auto lg:h-screen" >
+  <section class="container mx-auto px-4 py-16 relative h-auto lg:h-screen">
     <!-- Background gradient shapes -->
     <div
       class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full blur-3xl opacity-30 -z-10">
@@ -205,7 +187,7 @@
         </div>
 
         <!-- Text content -->
-        <div class="lg:pl-8"data-aos="fade-down">
+        <div class="lg:pl-8" data-aos="fade-down">
           <h2 class="text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             We help organizations find the best
             <span class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
@@ -233,7 +215,7 @@
     </div>
   </section>
 
- 
+
 
   <section class="py-20 px-4">
     <div class="container mx-auto max-w-6xl">
@@ -266,114 +248,114 @@
         <!-- Staff Augmentation Content -->
         <div id="staff-augmentation" class="tab-content active ">
           <!-- <div class="bg-white rounded-xl shadow-lg overflow-hidden"> -->
-            <div class="flex flex-col md:flex-row justify-center items-center">
-              <div class="bg-white rounded-lg shadow-lg w-4/6 p-8">
-                <h3 class="text-3xl font-bold text-blue-900 mb-6">Staff Augmentation</h3>
-                <p class="text-gray-600 text-lg  mb-6">
-                  Employ the help you need when you need it. We offer a full suite of staffing services for maximum
-                  productivity, including:
-                </p>
-                <ul class="space-y-4">
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Contract
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Contract-to-Hire
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Direct Hire
-                  </li>
-                </ul>
-              </div>
-              <!-- <div class="md:w-1/2">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="bg-white rounded-lg shadow-lg w-4/6 p-8">
+              <h3 class="text-3xl font-bold text-blue-900 mb-6">Staff Augmentation</h3>
+              <p class="text-gray-600 text-lg  mb-6">
+                Employ the help you need when you need it. We offer a full suite of staffing services for maximum
+                productivity, including:
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Contract
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Contract-to-Hire
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Direct Hire
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="md:w-1/2">
                 <img src="assets/hero.jpg" alt="Staff Augmentation" class="w-full h-full object-cover">
               </div> -->
-            </div>
+          </div>
           <!-- </div> -->
         </div>
 
         <!-- Project Staffing Content -->
         <div id="project-staffing" class="tab-content hidden">
           <!-- <div class="bg-white rounded-xl shadow-lg overflow-hidden"> -->
-            <div class="flex flex-col md:flex-row justify-center items-center">
-              <div class=" bg-white rounded-lg shadow-lg w-4/6 p-8">
-                <h3 class="text-3xl font-bold text-blue-900 mb-6">Complete Project Staffing</h3>
-                <p class="text-gray-600 mb-6 text-lg">
-                  We provide end-to-end project staffing solutions tailored to your specific needs.
-                   Our comprehensive approach includes:
-                </p>
-                <ul class="space-y-4">
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Project Team Assembly
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Resource Management
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Project Delivery Support
-                  </li>
-                </ul>
-              </div>
-              <!-- <div class="md:w-1/2">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class=" bg-white rounded-lg shadow-lg w-4/6 p-8">
+              <h3 class="text-3xl font-bold text-blue-900 mb-6">Complete Project Staffing</h3>
+              <p class="text-gray-600 mb-6 text-lg">
+                We provide end-to-end project staffing solutions tailored to your specific needs.
+                Our comprehensive approach includes:
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Project Team Assembly
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Resource Management
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Project Delivery Support
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="md:w-1/2">
                 <img src="assets/Complete_Project_Staffing.png" alt="Project Staffing"
                   class="w-full h-full object-cover">
               </div> -->
-            </div>
+          </div>
           <!-- </div> -->
         </div>
 
         <!-- Recruiting Process Content -->
         <div id="recruiting-process" class="tab-content hidden">
           <!-- <div class="bg-white rounded-xl shadow-lg overflow-hidden"> -->
-            <div class="flex flex-col md:flex-row justify-center items-center">
-              <div class=" bg-white rounded-lg shadow-lg w-4/6 p-8">
-                <h3 class="text-3xl font-bold text-blue-900 mb-6">Our Recruiting Process</h3>
-                <p class="text-gray-600 mb-6 text-lg">
-                  Our proven recruiting methodology ensures we find the perfect match for your organization:
-                </p>
-                <ul class="space-y-4">
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Requirements Analysis
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Candidate Screening
-                  </li>
-                  <li class="flex items-center text-gray-700">
-                    <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    Skill Assessment
-                  </li>
-                </ul>
-              </div>
-              <!-- <div class="md:w-1/2">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class=" bg-white rounded-lg shadow-lg w-4/6 p-8">
+              <h3 class="text-3xl font-bold text-blue-900 mb-6">Our Recruiting Process</h3>
+              <p class="text-gray-600 mb-6 text-lg">
+                Our proven recruiting methodology ensures we find the perfect match for your organization:
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Requirements Analysis
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Candidate Screening
+                </li>
+                <li class="flex items-center text-gray-700">
+                  <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Skill Assessment
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="md:w-1/2">
                 <img src="assets/Recruiting_Process_.png " alt="Recruiting Process" class="w-full h-full object-cover">
               </div> -->
-            </div>
+          </div>
           <!-- </div> -->
         </div>
       </div>
@@ -466,222 +448,221 @@
       <p class="text-2xl md:text-5xl text-gray-700 font-bold mb-6">
         To know more .....
       </p>
-      <a href="contactus.html" target="_blank"> 
+      <a href="contactus.html" target="_blank">
         <!-- https://www.ipartnerstaffing.com/ -->
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        <button
+          class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
           Click here
         </button>
       </a>
     </div>
   </section>
-  
+
 
   <section id="contact-section" class="relative bg-gray-100 py-16 px-6 lg:px-20 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto ">
     <!-- Curved Background -->
     <div class="absolute inset-0" data-aos="fade-up">
-        <svg class="w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#003366" fill-opacity="0.8"
-                d="M0,128L60,144C120,160,240,192,360,213.3C480,235,600,245,720,234.7C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-            </path>
-        </svg>
+      <svg class="w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#003366" fill-opacity="0.8"
+          d="M0,128L60,144C120,160,240,192,360,213.3C480,235,600,245,720,234.7C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
     </div>
 
     <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Left Side -->
-        <div class="space-y-6 text-center lg:text-left">
-            <h2 class="text-4xl font-extrabold text-gray-800  font-poppins">
-                Let’s Build Something Great Together!
-            </h2>
-            <p class="text-lg text-gray-600  font-poppins">
-                Share your details with us, and we’ll get in touch to create the best solution for your needs.
-            </p>
-            <img src="assets/Contactimgjpeg.jpeg" alt="Collaboration Illustration"
-                class="rounded-lg shadow-lg hover:scale-105 transition-transform" />
+      <!-- Left Side -->
+      <div class="space-y-6 text-center lg:text-left">
+        <h2 class="text-4xl font-extrabold text-gray-800  font-poppins">
+          Let’s Build Something Great Together!
+        </h2>
+        <p class="text-lg text-gray-600  font-poppins">
+          Share your details with us, and we’ll get in touch to create the best solution for your needs.
+        </p>
+        <img src="assets/Contactimgjpeg.jpeg" alt="Collaboration Illustration"
+          class="rounded-lg shadow-lg hover:scale-105 transition-transform" />
+      </div>
+
+      <!-- Right Side: Form -->
+      <form class="bg-white  shadow-2xl rounded-2xl p-8 space-y-8 relative z-10" data-aos="">
+        <!-- Heading -->
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
+            Contact Us
+          </h3>
+          <p class="text-gray-500 font-poppins">
+            We’d love to hear from you!
+          </p>
         </div>
 
-        <!-- Right Side: Form -->
-        <form class="bg-white  shadow-2xl rounded-2xl p-8 space-y-8 relative z-10" data-aos="">
-            <!-- Heading -->
-            <div class="text-center">
-                <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
-                    Contact Us
-                </h3>
-                <p class="text-gray-500 dark:text-gray-400 font-poppins">
-                    We’d love to hear from you!
-                </p>
-            </div>
+        <!-- Form Fields -->
+        <div class="space-y-4">
+          <!-- Name -->
+          <div class="relative">
+            <span class="absolute top-3 left-3 text-light-blue-500 ">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" name="name" placeholder="Your Name" required
+              class="pl-10 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
+          </div>
 
-            <!-- Form Fields -->
-            <div class="space-y-4">
-                <!-- Name -->
-                <div class="relative">
-                    <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
-                        <i class="fas fa-user"></i>
-                    </span>
-                    <input type="text" name="name" placeholder="Your Name" required
-                        class="pl-10 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
-                </div>
+          <!-- Email -->
+          <div class="relative">
+            <span class="absolute top-3 left-3 text-light-blue-500">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <input type="email" name="email" placeholder="Your Email" required
+              class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
+          </div>
 
-                <!-- Email -->
-                <div class="relative">
-                    <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <input type="email" name="email" placeholder="Your Email" required
-                        class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
-                </div>
+          <!-- Contact Number -->
+          <div class="relative">
+            <span class="absolute top-3 left-3 text-light-blue-500 ">
+              <i class="fas fa-phone"></i>
+            </span>
+            <input type="tel" name="contact" placeholder="Your Contact No" required
+              class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
+          </div>
 
-                <!-- Contact Number -->
-                <div class="relative">
-                    <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
-                        <i class="fas fa-phone"></i>
-                    </span>
-                    <input type="tel" name="contact" placeholder="Your Contact No" required
-                        class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
-                </div>
+          <!-- Services Dropdown -->
+          <div class="relative">
+            <select name="services" required
+              class="block w-full border border-gray-300  bg-gray-50 text-gray-800  rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300  focus:border-light-blue-500">
+              <option value="" disabled selected class="text-gray-400">Select Required Service
+              </option>
+              <option value="IT & Professional Staffing">IT & Professional Staffing</option>
+              <option value="Healthcare Staffing">Healthcare Staffing</option>
+              <option value="IaaS">IaaS</option>
+              <option value="SaaS & PaaS">SaaS & PaaS</option>
+              <option value="TaaS">TaaS</option>
+            </select>
 
-                <!-- Services Dropdown -->
-                <div class="relative">
-                    <select name="services" required
-                        class="block w-full border border-gray-300  bg-gray-50 text-gray-800 dark:text-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300  focus:border-light-blue-500">
-                        <option value="" disabled selected class="text-gray-400">Select Required Service
-                        </option>
-                        <option value="IT & Professional Staffing">IT & Professional Staffing</option>
-                        <option value="Healthcare Staffing">Healthcare Staffing</option>
-                        <option value="IaaS">IaaS</option>
-                        <option value="SaaS & PaaS">SaaS & PaaS</option>
-                        <option value="TaaS">TaaS</option>
-                    </select>
+            <!-- Dropdown Icon -->
+            <span class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-indigo-500 ">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
 
-                    <!-- Dropdown Icon -->
-                    <span
-                        class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-indigo-500 dark:text-gray-300">
-                        <i class="fas fa-chevron-down"></i>
-                    </span>
-                </div>
+          <!-- Description -->
+          <textarea name="description" rows="4" placeholder="Tell us more about your requirements" required
+            class="w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800 font-poppins"></textarea>
+        </div>
 
-                <!-- Description -->
-                <textarea name="description" rows="4" placeholder="Tell us more about your requirements" required
-                    class="w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800 font-poppins"></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit"
-                class="w-full bg-gradient-to-r from-[#003366] to-[#66B2FF] hover:from-[#66B2FF] hover:to-[#003366] text-white font-bold py-3 px-6 rounded-lg transition font-poppins">
-                Submit
-            </button>
-        </form>
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-gradient-to-r from-[#003366] to-[#66B2FF] hover:from-[#66B2FF] hover:to-[#003366] text-white font-bold py-3 px-6 rounded-lg transition font-poppins">
+          Submit
+        </button>
+      </form>
     </div>
-</section>
+  </section>
 
 
 
-<section id="footer-section">
+  <section id="footer-section">
     <!-- Footer -->
 
-    <footer class="text-center text-lg-start bg-[#003366] dark:bg-[#3a5f8f]">
+    <footer class="text-center text-lg-start bg-[#003366] ">
 
-        <!-- Section: Links -->
-        <section>
-            <div class="container mx-auto px-4 text-center text-md-start">
+      <!-- Section: Links -->
+      <section>
+        <div class="container mx-auto px-4 text-center text-md-start">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6">
 
-                    <div class="mb-4 flex flex-col items-start">
-                        <h6 class="text-uppercase font-sans font-medium text-white text-xl  ">
-                            iPartner
-                            Consulting</h6>
-                        <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
-                            <li><a href="#hero-section" class="text-white ">Home</a></li>
-                            <li><a href="#" class="text-white">About US</a></li>
-                            <li><a href="#service-section" class="text-white">Services</a></li>
-                            <li><a href="#product-section" class="text-white">Products</a></li>
-                            <li><a href="#solution-section" class="text-white">Solutions</a></li>
-                            <li><a href="#" class="text-white">Careers</a></li>
-                            <li><a href="#contact-section" class="text-white">Contact Us</a></li>
-                        </ul>
-                    </div>
+            <div class="mb-4 flex flex-col items-start">
+              <h6 class="text-uppercase font-sans font-medium text-white text-xl  ">
+                iPartner
+                Consulting</h6>
+              <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
+                <li><a href="#hero-section" class="text-white ">Home</a></li>
+                <li><a href="#" class="text-white">About US</a></li>
+                <li><a href="#service-section" class="text-white">Services</a></li>
+                <li><a href="#product-section" class="text-white">Products</a></li>
+                <li><a href="#solution-section" class="text-white">Solutions</a></li>
+                <li><a href="#" class="text-white">Careers</a></li>
+                <li><a href="#contact-section" class="text-white">Contact Us</a></li>
+              </ul>
+            </div>
 
-                    <div class="mb-4 flex flex-col items-start">
+            <div class="mb-4 flex flex-col items-start">
 
-                        <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
+              <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
-                            Products</h6>
-                        <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
-                            <li> <a href="#" class="text-white">IT & Professional Staffing</a></li>
-                            <li><a href="#" class="text-white">Healthcare Staffing</a></li>
-                            <li><a href="#" class="text-white">IaaS</a></li>
-                            <li><a href="#" class="text-white">SaaS & PaaS</a></li>
-                            <li><a href="#" class="text-white">TaSS</a></li>
-                        </ul>
-                    </div>
+                Products</h6>
+              <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
+                <li> <a href="#" class="text-white">IT & Professional Staffing</a></li>
+                <li><a href="#" class="text-white">Healthcare Staffing</a></li>
+                <li><a href="#" class="text-white">IaaS</a></li>
+                <li><a href="#" class="text-white">SaaS & PaaS</a></li>
+                <li><a href="#" class="text-white">TaSS</a></li>
+              </ul>
+            </div>
 
-                    <div class="mb-4 flex flex-col items-start">
-                        <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  ">
-                            Social Media</h6>
-                        <ul class="space-y-2 pt-2 text-left">
+            <div class="mb-4 flex flex-col items-start">
+              <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1  ">
+                Social Media</h6>
+              <ul class="space-y-2 pt-2 text-left">
 
-                            <li class="text-lg"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i>
-                                    Facebook</a></li>
-                            <li class="text-lg"><a href="https://www.linkedin.com/company/ipartnerconsult/"
-                                    class="text-white"> <i class="fab fa-linkedin"></i> Linkedin</a>
-                            </li>
+                <li class="text-lg"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i>
+                    Facebook</a></li>
+                <li class="text-lg"><a href="https://www.linkedin.com/company/ipartnerconsult/" class="text-white"> <i
+                      class="fab fa-linkedin"></i> Linkedin</a>
+                </li>
 
 
-                        </ul>
-                    </div>
+              </ul>
+            </div>
 
-                    <div class="mb-4 flex flex-col items-start">
+            <div class="mb-4 flex flex-col items-start">
 
-                        <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
+              <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
-                            Contact</h6>
-                        <ul class="space-y-2  pt-2 text-left">
-                            <li>
-                                <p class="text-white"><i class="fas fa-home mr-3"></i>60 Gillingham Dr,
-                                    Suite 400
-                                    Brampton,Ontario L6X 0G9</p>
-                            </li>
-                            <li>
-                                <p class="text-white"><i
-                                        class="fas fa-envelope mr-3"></i>info@ipartnerconsulting.com</p>
-                            </li>
-                            <li>
-                                <p class="text-white"><i class="fas fa-phone mr-3"></i>+1 (647) 990 -
-                                    5090</p>
-                            </li>
-                            <!-- <li>
+                Contact</h6>
+              <ul class="space-y-2  pt-2 text-left">
+                <li>
+                  <p class="text-white"><i class="fas fa-home mr-3"></i>60 Gillingham Dr,
+                    Suite 400
+                    Brampton,Ontario L6X 0G9</p>
+                </li>
+                <li>
+                  <p class="text-white"><i class="fas fa-envelope mr-3"></i>info@ipartnerconsulting.com</p>
+                </li>
+                <li>
+                  <p class="text-white"><i class="fas fa-phone mr-3"></i>+1 (647) 990 -
+                    5090</p>
+                </li>
+                <!-- <li>
                                 <p class="text-white"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
                             </li> -->
-                        </ul>
-                    </div>
-
-                </div>
-                <!-- Grid row -->
+              </ul>
             </div>
-        </section>
+
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
 
 
-        <!-- Section: Logo, Copyright, Privacy, Terms, and Social Media -->
-        <section class="flex flex-col sm:flex-row justify-center items-center p-4  bg-slate-900">
-            <!-- Company Logo -->
-            <div class="mb-4 sm:mb-0">
-                <!-- <a href="#">
+      <!-- Section: Logo, Copyright, Privacy, Terms, and Social Media -->
+      <section class="flex flex-col sm:flex-row justify-center items-center p-4  bg-slate-900">
+        <!-- Company Logo -->
+        <div class="mb-4 sm:mb-0">
+          <!-- <a href="#">
                     <img src="https://www.ipartnerconsulting.com/assets/ipartner_consulting%20logo-white.png"
                         alt="Company Logo" class="h-8">
                 </a> -->
-            </div>
+        </div>
 
-            <div class="text-white text-center sm:text-left mb-4 sm:mb-0">
-                <span class="text-gray-200 dark:text-gray-300">© 2024 iPartner Consulting™ All rights
-                    reserved.</span>
-                <span class="mx-2">|</span>
-                <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Privacy Policy</a>
-                <span class="mx-2">|</span>
-                <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Terms and
-                    Conditions</a>
-            </div>
-            <!-- <div class="flex space-x-4">
+        <div class="text-white text-center sm:text-left mb-4 sm:mb-0">
+          <span class="text-gray-200 ">© 2024 iPartner Consulting™ All rights
+            reserved.</span>
+          <span class="mx-2">|</span>
+          <a href="#" class="text-gray-200 hover:underline">Privacy Policy</a>
+          <span class="mx-2">|</span>
+          <a href="#" class="text-gray-200 hover:underline">Terms and
+            Conditions</a>
+        </div>
+        <!-- <div class="flex space-x-4">
                 <a href="#" class="text-gray-200 dark:text-gray-300">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -698,10 +679,10 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div> -->
-        </section>
+      </section>
     </footer>
     <!-- Footer -->
-</section>
+  </section>
 
 
 

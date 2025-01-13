@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+    <header
+        class="rounded-lg bg-white  text-gray-900 shadow-md   sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto   ">
+        <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
+        <!-- bg-gradient-to-l from-lightblue to-darkblue -->
+        <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="text-xl font-semibold">
+                <a href="#">
+                    <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" class="h-14">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="hover:text-teal-200  transition-all duration-300 whitespace-nowrap text-xl  ">
+                    <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
+                <a href="#" class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap  text-xl">About
+                    Us</a>
+
+                <!-- Services Dropdown with Arrow -->
+                <div class="relative" id="desktop-services">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-services-toggle">
+                        <span class=" text-xl hover:text-blue-900"><a href="#service-section">Services</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-services-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg rounded-lg w-48 mt-5"
+                        id="desktop-services-dropdown">
+                        <a href="ITProfessional.html"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:text-white hover:rounded-md  text-xl">IT
+                            &
+                            Professional</a>
+                        <a href="Healthcare.html"
+                            class="block px-4 py-3 hover:bg-blue-700 hover:rounded-md hover:text-white  text-xl">Healthcare</a>
+                    </div>
+                </div>
+
+                <!-- Products Dropdown with Arrow -->
+                <div class="relative" id="desktop-products">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-products-toggle">
+                        <span class=" text-xl"><a href="#product-section">Our Products</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-products-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-products-dropdown">
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">IaaS</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Dropdown with Arrow -->
+                <div class="relative" id="desktop-solutions">
+                    <button
+                        class="flex items-center space-x-2 hover:text-blue-900  transition-all duration-300 whitespace-nowrap"
+                        id="desktop-solutions-toggle">
+                        <span class=" text-xl hover:text-blue-900"> <a href="#solution-section">Solutions</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 transition-transform" id="desktop-solutions-arrow">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 hidden bg-white  text-gray-800  shadow-lg  rounded-lg w-48 mt-5"
+                        id="desktop-solutions-dropdown">
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">SaaS
+                            & PaaS</a>
+                        <a href="#"
+                            class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">TaaS</a>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
+                <a href="contactus.html"
+                    class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
+                    <img src="assets/contact_us.png" class="h-8 w-8 animate-ring" alt="Contact Us">
+                </a>
+            </nav>
+
+
+            <!-- Burger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle"
+                    class="text-gray-800  focus:outline-none bg-gray-200  p-2 rounded-md hover:bg-gray-300  transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6h16.5M3.75 12h16.5M3.75 18h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden text-slate-950  bg-white  shadow-md z-100 ">
+            <a href="index.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 shadow-sm mb-2">About Us</a>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="services-toggle">
+                    <a href="#service-section">Services</a>
+                    <svg id="services-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="services-dropdown" class="pl-4 hidden">
+                    <a href="ITProfessional.html" class="block px-4 py-2 hover:bg-indigo-100">IT & Professional</a>
+                    <a href="Healthcare.html" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="products-toggle">
+                    <a href="#product-section">Our Products</a>
+                    <svg id="products-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="products-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">IaaS</a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                    class="w-full text-left px-4 py-2 hover:bg-indigo-100  flex justify-between items-center shadow-sm mb-2"
+                    id="solutions-toggle">
+                    <a href="#solution-section">Solutions</a>
+                    <svg id="solutions-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 9l-7.5 7.5L4.5 9" />
+                    </svg>
+                </button>
+                <div id="solutions-dropdown" class="pl-4 hidden">
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100">SaaS & PaaS</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">TaaS</a>
+                </div>
+            </div>
+
+            <a href="Careers.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
+            <a href="contactus.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm ">Contact Us</a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section
+        class="relative min-h-screen bg-gradient-to-b from-white via-blue-100 to-white overflow-hidden ml-3 mr-3 md:ml-14 md:mr-14 mx-auto">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0 bg-grid-pattern"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+
+
+        <!-- Main Hero Content -->
+        <div class="container mx-auto px-4 pt-8 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Column - Text Content -->
+                <div class="space-y-6 md:space-y-8">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="space-y-4 md:space-y-6">
+                        <h1
+                            class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 font-sans leading-tight">
+                            Founded in 2014, iPartner Healthcare
+                        </h1>
+                        <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-900">
+                            is a MWBE Certified and fastest growing U.S. staffing firm.
+                        </p>
+                    </div>
+
+                    <p data-aos="fade-up" data-aos-delay="200"
+                        class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                        We are specialists in the delivery of healthcare staffing solutions driven by an insatiable
+                        quest to please our clients. Our recruitment team will do everything possible to ensure the
+                        placements go through as smoothly as possible. With our customer service available day and
+                        night, we can address your needs anytime.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="400"
+                        class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                        We strongly believe that our clients are indeed our biggest asset, and that is why we personally
+                        interview each candidate and carefully screen them to ensure the perfect match for your
+                        organization's specific needs.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <!-- <div data-aos="fade-up" data-aos-delay="600"
+                        class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#"
+                            class="bg-blue-500 text-white px-6 md:px-8 py-3 rounded-full hover:bg-blue-600 transition-colors transform hover:scale-105 duration-200 text-center">
+                            Find Jobs
+                        </a>
+                        <a href="#"
+                            class="border-2 border-blue-500 text-blue-500 px-6 md:px-8 py-3 rounded-full hover:bg-blue-50 transition-colors text-center">
+                            Hire Talent
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- Right Column - Logo -->
+                <div data-aos="fade-left" data-aos-duration="1200" class="relative order-first md:order-last">
+                    <!-- Main Logo -->
+                    <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
+                        <img src="assets/healthcarelogo.png" alt="iPartner Healthcare Full Logo"
+                            class="w-full max-w-md lg:max-w-2xl mx-auto">
+                    </div>
+
+                    <!-- Decorative Elements -->
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-150 rounded-full opacity-10 animate-pulse">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 md:w-32 h-20 md:h-32 bg-blue-400 rounded-full opacity-20 animate-bounce">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 bg-blue-500 rounded-full opacity-20 animate-bounce delay-1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-blue-500 text-lg font-semibold mb-2">iPartner Healthcare</h2>
+                <h3 class="text-3xl lg:text-4xl font-bold text-gray-900">Our Staffing Services</h3>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Nursing Card -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                    data-aos="fade-up">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-5">
+                            <div class="h-16 w-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                            </div>
+                            <h4 class="text-3xl font-bold text-blue-950 mb-4">Nursing</h4>
+                        </div>
+
+
+                        <p class="text-gray-600 mb-6">We offer the following healthcare staffing services. Our staff are
+                            professionals in their respective areas fully vetted for experience and certification.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Travel Registered Nurses(RN)</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Licensed Practical Nurses(LPN)</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Certified Nursing Assistant(CNA)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Allied Health Card -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-8">
+                        <div class="flex space-x-5 items-center">
+                            <div class="h-16 w-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-3xl font-bold text-blue-950 mb-4 ">Allied Health</h4>
+                        </div>
+                        <p class="text-gray-600 mb-6">Allied health professionals play a vital role in the healthcare
+                            system by providing essential support and services that help ensure comprehensive patient
+                            care.</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Medical Assistants</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Pharmacists</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Surgical Techs</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>X-Ray Techs</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Phlebotomists</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 flex-shrink-0 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Sterile Processing Techs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapy Clinicians Card -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-8">
+
+                        <div class="flex items-center space-x-5">
+                            <div class="h-16 w-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-3xl font-bold text-blue-950 mb-4">Therapy Clinicians</h4>
+                        </div>
+
+                        <p class="text-gray-600 mb-6">Therapy clinicians encompass a range of professionals who provide
+                            therapeutic services to individuals seeking to improve their physical, emotional, or
+                            psychological well-being.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Speech & Language Therapists</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Physical Therapists</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Respiratory Therapists</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Occupational therapists</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-8">
+
+                        <div class="flex items-center space-x-5">
+
+                            <div class="h-16 w-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-3xl font-bold  text-blue-950 mb-4">Why iPartner Healthcare</h4>
+                        </div>
+
+                        <p class="text-gray-600 mb-6">Checkout what makes us special than others</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>We provide customized travel and direct placement nursing jobs to RNs and
+                                    LPNs/LVNs throughout the country</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>With offices across the U.S., we are always available for our travelling nurses as
+                                    well as each of our clients</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-700">
+                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>Our extensive screening and interviewing process verifies the quality of each
+                                    professional that we place</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mb-2 space-y-5 mt-10">
+            <a href="
+            https://www.iphsp.com/" target="_blank">
+                <button
+                    class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Know More
+                </button></a>
+
+        </div>
+    </section>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

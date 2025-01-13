@@ -1,0 +1,80 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-slide {
+    animation: slide 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .animate-slide {
+        animation: none !important;
+    }
+}
+
+#carousel {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+@keyframes ring {
+    0% {
+      transform: rotate(-15deg);
+    }
+
+    2% {
+      transform: rotate(15deg);
+    }
+
+    4% {
+      transform: rotate(-18deg);
+    }
+
+    6% {
+      transform: rotate(18deg);
+    }
+
+    8% {
+      transform: rotate(-22deg);
+    }
+
+    10% {
+      transform: rotate(22deg);
+    }
+
+    12% {
+      transform: rotate(-18deg);
+    }
+
+    14% {
+      transform: rotate(18deg);
+    }
+
+    16% {
+      transform: rotate(-12deg);
+    }
+
+    18% {
+      transform: rotate(12deg);
+    }
+
+    20% {
+      transform: rotate(0deg);
+    }
+  }
+
+  /* Custom Animation Class */
+  .animate-ring {
+    animation: ring 4s ease infinite;
+    /* Changed to 4 seconds for slower animation */
+  }

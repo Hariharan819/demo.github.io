@@ -9,9 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // AOS.init();
+
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("hidden");
+});
+
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", function () {
+    document.getElementById("mobile-menu").classList.add("hidden");
+  });
 });
 
 // Desktop Dropdown Toggling

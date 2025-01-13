@@ -9,96 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0-alpha.1/dist/tailwind.min.css" rel="stylesheet"> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<style>
-    @keyframes slide {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
-    }
-
-    .animate-slide {
-        animation: slide 25s linear infinite;
-    }
-
-    @media (max-width: 768px) {
-        .animate-slide {
-            animation: none !important;
-        }
-    }
-
-    #carousel {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        transition: transform 0.5s ease-in-out;
-    }
-
-    @keyframes ring {
-        0% {
-            transform: rotate(-15deg);
-        }
-
-        2% {
-            transform: rotate(15deg);
-        }
-
-        4% {
-            transform: rotate(-18deg);
-        }
-
-        6% {
-            transform: rotate(18deg);
-        }
-
-        8% {
-            transform: rotate(-22deg);
-        }
-
-        10% {
-            transform: rotate(22deg);
-        }
-
-        12% {
-            transform: rotate(-18deg);
-        }
-
-        14% {
-            transform: rotate(18deg);
-        }
-
-        16% {
-            transform: rotate(-12deg);
-        }
-
-        18% {
-            transform: rotate(12deg);
-        }
-
-        20% {
-            transform: rotate(0deg);
-        }
-    }
-
-    /* Custom Animation Class */
-    .animate-ring {
-        animation: ring 4s ease infinite;
-        /* Changed to 4 seconds for slower animation */
-    }
-</style>
-
 </head>
 
 <body class=" w-screen bg-no-repeat mt-1" style="background-image:url(assets/hero.jpg); opacity: 80;">
     <!-- <header class="w-full bg-gradient-to-r from-blue-800 to-indigo-900 text-white dark:bg-gray-700 shadow-md"> -->
     <div class="absolute inset-0 bg-gray-950 bg-opacity-60 h-[913px] w-screen"></div>
     <header
-        class="rounded-lg bg-white  text-gray-900 shadow-md  dark:bg-none sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto   ">
+        class="rounded-lg bg-white  text-gray-900 shadow-md   sticky top-0 z-50 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto   ">
         <!-- bg-gradient-to-r from-slate-900 to-slate-700 -->
         <!-- bg-gradient-to-l from-lightblue to-darkblue -->
         <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
@@ -132,7 +53,7 @@
                             class="block px-4 py-3 hover:bg-blue-700  hover:text-white hover:rounded-md  text-xl">IT
                             &
                             Professional</a>
-                        <a href="#"
+                        <a href="Healthcare.html"
                             class="block px-4 py-3 hover:bg-blue-700 hover:rounded-md hover:text-white  text-xl">Healthcare</a>
                     </div>
                 </div>
@@ -176,7 +97,7 @@
                     </div>
                 </div>
 
-                <a href="#"
+                <a href="Careers.html"
                     class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap  text-xl">Careers</a>
                 <a href="#contact-section"
                     class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
@@ -199,9 +120,9 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden text-slate-950 dark:text-white  bg-white  shadow-md z-100 ">
-            <a href="#hero-section" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
-            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 dark:hover:bg-gray-700 shadow-sm mb-2">About Us</a>
+        <div id="mobile-menu" class="hidden md:hidden text-slate-950  bg-white  shadow-md z-100 ">
+            <a href="index.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-indigo-100 shadow-sm mb-2">About Us</a>
 
             <div class="relative">
                 <button
@@ -214,8 +135,8 @@
                     </svg>
                 </button>
                 <div id="services-dropdown" class="pl-4 hidden">
-                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100">IT & Professional</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
+                    <a href="ITProfessional.html" class="block px-4 py-2 hover:bg-indigo-100">IT & Professional</a>
+                    <a href="Healthcare.html" class="block px-4 py-2 hover:bg-indigo-100 ">Healthcare</a>
                 </div>
             </div>
 
@@ -250,7 +171,7 @@
                 </div>
             </div>
 
-            <a href="#" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
+            <a href="Careers.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm mb-2">Careers</a>
             <a href="#contact-section" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm ">Contact Us</a>
         </div>
     </header>
@@ -268,12 +189,11 @@
         <div class="w-full flex flex-col items-center justify-center text-center md:mb-16 mb-10 px-4 relative"
             data-aos="fade-up" data-aos-duration="1000">
             <h1
-                class="text-4xl md:text-6xl font-Poppins font-bold bg-clip-text text-transparent text-white  dark:to-yellow-400 leading-tight">
+                class="text-4xl md:text-6xl font-Poppins font-bold bg-clip-text text-transparent text-white  leading-tight">
                 <!-- bg-gradient-to-r from-orange-500 via-blue-600 to-slate-900 dark:from-teal-400 dark:via-pink-500 -->
                 We are professional service partners
             </h1>
-            <p
-                class="text-lg md:text-2xl font-Poppins bg-clip-text text-transparent text-white dark:to-yellow-400 mt-4 leading-relaxed">
+            <p class="text-lg md:text-2xl font-Poppins bg-clip-text text-transparent text-white mt-4 leading-relaxed">
                 that genuinely care. Since 2014, we’ve been building powerful relationships and genuine partnerships.
             </p>
         </div>
@@ -283,31 +203,28 @@
             <div class="w-full flex flex-wrap justify-center gap-6 md:gap-10">
                 <div class="hover:scale-105 transform transition-all text-center">
                     <div
-                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white dark:to-yellow-400">
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white ">
                         50
                     </div>
-                    <div
-                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text   text-white dark:to-yellow-400 mt-2">
+                    <div class="text-md md:text-xl font-Poppins text-transparent bg-clip-text   text-white mt-2">
                         Client Partners
                     </div>
                 </div>
                 <div class="hover:scale-105 transform transition-all text-center">
                     <div
-                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white  dark:to-yellow-400">
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white  ">
                         10+
                     </div>
-                    <div
-                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text  text-white  dark:to-yellow-400 mt-2">
+                    <div class="text-md md:text-xl font-Poppins text-transparent bg-clip-text  text-white  mt-2">
                         Years in Services
                     </div>
                 </div>
                 <div class="hover:scale-105 transform transition-all text-center">
                     <div
-                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white dark:to-yellow-400">
+                        class="text-4xl md:text-5xl font-Poppins font-extrabold text-transparent bg-clip-text  text-white">
                         5K+
                     </div>
-                    <div
-                        class="text-md md:text-xl font-Poppins text-transparent bg-clip-text   text-white dark:to-yellow-400 mt-2">
+                    <div class="text-md md:text-xl font-Poppins text-transparent bg-clip-text   text-white  mt-2">
                         Positions Filled
                     </div>
                 </div>
@@ -315,8 +232,8 @@
         </div>
 
         <a href="#service-section" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer inset-1">
-            <svg class="w-8 h-8 text-gray-800 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-transform"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-8 h-8 text-gray-800  hover:text-blue-600 transition-transform" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
         </a>
@@ -370,7 +287,7 @@
                 </a>
 
                 <!-- Service Card 2 -->
-                <a href=""
+                <a href="Healthcare.html " target=""
                     class="relative bg-white rounded-lg overflow-hidden shadow-lg group transition-shadow duration-300 w-full h-80 sm:h-80 md:h-80 lg:h-80 mx-auto"
                     data-aos="fade-left" data-aos-duration="1000">
                     <!-- Background Image -->
@@ -480,7 +397,8 @@
                     <img src="assets/Tass_img.png" alt="TaaS" class="w-20 h-20">
                     <div class="text-left flex flex-col items-center justify-center" data-aos="fade-right">
                         <h3 class="text-3xl font-semibold text-blue-950 mb-2 mt-5">TaaS</h3>
-                        <p class="text-gray-600 mtt-2">Talent as a Service (TaaS) is a model that provides businesses
+                        <p class="text-gray-600 mtt-2 text-justify">Talent as a Service (TaaS) is a model that provides
+                            businesses
                             with
                             on-demand access to skilled professionals, allowing them to scale teams quickly and
                             efficiently. It offers flexibility by enabling companies to hire talent for specific
@@ -491,7 +409,7 @@
         </div>
     </section>
 
-    <section class="dark:text-gray-900 rounded-md py-16 min-h-screen flex items-center justify-center">
+    <section class=" rounded-md py-16 min-h-screen flex items-center justify-center">
         <div class="container mx-auto text-center px-6">
             <!-- Icon Wrapper -->
             <div class="flex justify-center mb-6">
@@ -640,7 +558,7 @@
         </div>
         <div class="w-24 border-t-2 border-blue-900 mx-auto mt-10 mb-5"></div>
 
-        <div class="flex items-center justify-center dark:bg-white">
+        <div class="flex items-center justify-center ">
             <div class="relative w-full overflow-x-hidden p-4 sm:p-8 max-w-7xl">
                 <!-- Mobile View: Static Grid -->
                 <div class="grid grid-cols-3 gap-4 md:hidden">
@@ -752,7 +670,7 @@
                     <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
                         Contact Us
                     </h3>
-                    <p class="text-gray-500 dark:text-gray-400 font-poppins">
+                    <p class="text-gray-500  font-poppins">
                         We’d love to hear from you!
                     </p>
                 </div>
@@ -761,35 +679,35 @@
                 <div class="space-y-4">
                     <!-- Name -->
                     <div class="relative">
-                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                        <span class="absolute top-3 left-3 text-light-blue-500 ">
                             <i class="fas fa-user"></i>
                         </span>
                         <input type="text" name="name" placeholder="Your Name" required
-                            class="pl-10 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
+                            class="pl-10 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Email -->
                     <div class="relative">
-                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                        <span class="absolute top-3 left-3 text-light-blue-500 ">
                             <i class="fas fa-envelope"></i>
                         </span>
                         <input type="email" name="email" placeholder="Your Email" required
-                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
+                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Contact Number -->
                     <div class="relative">
-                        <span class="absolute top-3 left-3 text-light-blue-500 dark:text-indigo-400">
+                        <span class="absolute top-3 left-3 text-light-blue-500 ">
                             <i class="fas fa-phone"></i>
                         </span>
                         <input type="tel" name="contact" placeholder="Your Contact No" required
-                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800  font-poppins" />
+                            class="pl-10 w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800  font-poppins" />
                     </div>
 
                     <!-- Services Dropdown -->
                     <div class="relative">
                         <select name="services" required
-                            class="block w-full border border-gray-300  bg-gray-50 text-gray-800 dark:text-gray-200 rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300  focus:border-light-blue-500">
+                            class="block w-full border border-gray-300  bg-gray-50 text-gray-800  rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-light-blue-300  focus:border-light-blue-500">
                             <option value="" disabled selected class="text-gray-400">Select Required Service
                             </option>
                             <option value="IT & Professional Staffing">IT & Professional Staffing</option>
@@ -800,15 +718,14 @@
                         </select>
 
                         <!-- Dropdown Icon -->
-                        <span
-                            class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-indigo-500 dark:text-gray-300">
+                        <span class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-indigo-500 ">
                             <i class="fas fa-chevron-down"></i>
                         </span>
                     </div>
 
                     <!-- Description -->
                     <textarea name="description" rows="4" placeholder="Tell us more about your requirements" required
-                        class="w-full border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300 dark:focus:ring-light-blue-400 bg-gray-50  text-gray-800 font-poppins"></textarea>
+                        class="w-full border border-gray-300  rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-light-blue-300  bg-gray-50  text-gray-800 font-poppins"></textarea>
                 </div>
 
                 <!-- Submit Button -->
@@ -825,7 +742,7 @@
     <section id="footer-section">
         <!-- Footer -->
 
-        <footer class="text-center text-lg-start bg-[#003366] dark:bg-[#3a5f8f]">
+        <footer class="text-center text-lg-start bg-[#003366] ">
 
             <!-- Section: Links -->
             <section>
@@ -919,12 +836,12 @@
                 </div>
 
                 <div class="text-white text-center sm:text-left mb-4 sm:mb-0">
-                    <span class="text-gray-200 dark:text-gray-300">© 2024 iPartner Consulting™ All rights
+                    <span class="text-gray-200">© 2024 iPartner Consulting™ All rights
                         reserved.</span>
                     <span class="mx-2">|</span>
-                    <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Privacy Policy</a>
+                    <a href="#" class="text-gray-200  hover:underline">Privacy Policy</a>
                     <span class="mx-2">|</span>
-                    <a href="#" class="text-gray-200 dark:text-gray-300 hover:underline">Terms and
+                    <a href="#" class="text-gray-200  hover:underline">Terms and
                         Conditions</a>
                 </div>
                 <!-- <div class="flex space-x-4">
