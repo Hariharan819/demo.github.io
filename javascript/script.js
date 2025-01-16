@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-feather.replace();
+
 // AOS.init();
 
 document.getElementById("menu-toggle").addEventListener("click", function () {
