@@ -8,7 +8,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const text = "Welcome to iPartner";
+const typingTextElement = document.querySelector("#typing-text");
 
+// GSAP Timeline for typing
+const timeline = gsap.timeline();
+
+text.split("").forEach((char, index) => {
+  timeline.to(
+    {},
+    {
+      duration: 0.15,
+      onComplete: () => {
+        typingTextElement.textContent += char;
+      },
+    }
+  );
+});
+
+timeline.to(
+  {},
+  {
+    duration: 1,
+    onComplete: () => {
+      console.log("Typing completed, animation continues...");
+    },
+  }
+);
 // AOS.init();
 
 document.getElementById("menu-toggle").addEventListener("click", function () {
