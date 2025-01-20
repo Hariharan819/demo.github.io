@@ -1,5 +1,6 @@
 <!-- <section id="client-section" class="py-16 bg-white" data-aos="fade-up">
     <!-- Heading -->
+
     <div class="text-center mb-8">
         <div class="flex justify-center mb-6">
             <!-- Icon Image -->
@@ -140,10 +141,8 @@
             </div>
         </div>
     </div>
+
 </section> -->
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -257,5 +256,6 @@
             </a>
         </div>
     </section>
+
 </body>
 </html>

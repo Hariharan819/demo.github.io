@@ -76,28 +76,36 @@
   /* Changed to 4 seconds for slower animation */
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
 
-  to {
-    transform: translateX(-100%);
-  }
+
+
+/* Basic Button Styling */
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
 }
 
-.animate-slide {
-  animation: slide 25s linear infinite;
+/* SVG Icon Rotation and Hover Effects */
+.btn svg {
+  margin-right: 3px;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-@media (max-width: 768px) {
-  .animate-slide {
-    animation: none !important;
-  }
+.btn span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-#carousel {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+.btn:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.btn:hover span {
+  transform: translateX(7px);
 }
