@@ -75,3 +75,29 @@
   animation: ring 4s ease infinite;
   /* Changed to 4 seconds for slower animation */
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-slide {
+    animation: none !important;
+  }
+}
+
+#carousel {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
