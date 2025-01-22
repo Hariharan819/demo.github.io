@@ -259,3 +259,76 @@
 
 </body>
 </html>
+
+
+<section id="aboutus-section" class="min-h-screen flex flex-col justify-center items-center -mt-14 px-4 py-16">
+    <div class="container mx-auto text-center">
+        <!-- Icon -->
+        <div class="mb-6">
+            <img src="assets/ipartneringiconfore2.png" alt="Decorative Icon" class="w-16 h-16 mx-auto">
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-3xl font-sans font-semibold text-blue-950 leading-tight sm:text-4xl lg:text-5xl mb-4">
+            About Us
+        </h1>
+
+        <!-- Decorative Line -->
+        <div class="w-20 md:w-24 h-1 bg-blue-950 mx-auto rounded-full mb-4 mt-2"></div>
+
+        <!-- Content -->
+        <div class="md:max-w-4x sm:w-2xl mx-auto space-y-8">
+            <!-- Introduction -->
+            <p class="text-stone-900 md:text-2xl text-xl font-semibold text-justify px-6">
+                Founded in 2014, iPartner Consulting Inc. has been a trusted partner for organizations seeking top-notch staffing and IT consulting solutions. Headquartered in North America with a global reach, we specialize in delivering exceptional talent and innovative technology solutions that drive business success.
+            </p>
+
+            <!-- What We Do -->
+            <div class="text-left px-6">
+                <h2 class="text-2xl font-bold text-blue-950 mb-3">What We Do:</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 mr-4 text-blue-600">
+                            <i data-feather="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-stone-900 text-xl font-medium">
+                            <strong>Staffing Solutions:</strong> Our innovative staffing approach ensures we deliver candidates who have undergone rigorous high-level tech checks conducted by industry experts. This guarantees you receive professionals who are not only technically sound but also ready to contribute from day one.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 mr-4 text-blue-600">
+                            <i data-feather="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-stone-900 text-xl font-medium">
+                            <strong>Tech Checks:</strong> By leveraging our network of seasoned industry specialists, we validate candidates' technical expertise, ensuring they meet and exceed your expectations.
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 mr-4 text-blue-600">
+                            <i data-feather="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-stone-900 text-xl font-medium">
+                            <strong>Software Development:</strong> From cutting-edge applications to scalable solutions, we offer tailored software development services to help businesses stay ahead in the competitive market.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- How We Do It -->
+            <div class="text-left px-6">
+                <h2 class="text-2xl font-bold text-blue-950 mb-3">How We Do It:</h2>
+                <p class="text-stone-900 text-xl font-medium">
+                    Our staff augmentation services streamline the hiring process, offering flexibility to scale your workforce quickly and effectively. Through our valid, high-level technical evaluations, we ensure that every candidate is thoroughly vetted by industry experts, saving you time and effort while delivering only the best talent. Our IT consultants and engineers seamlessly integrate with your teams, whether on-site or remote.
+                </p>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="text-left px-6">
+                <h2 class="text-2xl font-bold text-blue-950 mb-3">Why Choose Us:</h2>
+                <p class="text-stone-900 text-xl font-medium">
+                    At iPartner Consulting, we prioritize quality, innovation, and reliability in every solution we provide. Our mission is to simplify hiring and IT processes while empowering businesses to achieve their goals. With a vision to transform the staffing industry, we aim to set new standards in talent acquisition and consulting services. With nearly a decade of excellence, iPartner Consulting is your trusted partner for staffing and technology solutions that deliver measurable results.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
