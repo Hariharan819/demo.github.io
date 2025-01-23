@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-us</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="index.css">
 
@@ -89,7 +92,7 @@
                         <a href="SassPass.html"
                             class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">SaaS
                             & PaaS</a>
-                        <a href="Tass.html"
+                        <a href="Taas.html"
                             class="block px-4 py-3 hover:bg-blue-700  hover:rounded-md hover:text-white  text-xl">TaaS</a>
                     </div>
                 </div>
@@ -164,7 +167,7 @@
                 </button>
                 <div id="solutions-dropdown" class="pl-4 hidden">
                     <a href="SassPass.html" class="block px-4 py-2 hover:bg-indigo-100">SaaS & PaaS</a>
-                    <a href="Tass.html" class="block px-4 py-2 hover:bg-indigo-100 ">TaaS</a>
+                    <a href="Taas.html" class="block px-4 py-2 hover:bg-indigo-100 ">TaaS</a>
                 </div>
             </div>
 
@@ -172,6 +175,7 @@
             <a href="contactus.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm ">Contact Us</a>
         </div>
     </header>
+
     <section id="contact-section"
         class="relative bg-gray-100  py-16 px-6 lg:px-20 ml-3 mr-3 md:ml-14 md:mr-14 mx-auto ">
         <!-- Curved Background -->
@@ -197,7 +201,7 @@
             </div>
 
             <!-- Right Side: Form -->
-            <form class="bg-white  shadow-2xl rounded-2xl p-8 space-y-8 relative z-10">
+            <form class="bg-white  shadow-2xl rounded-2xl p-8 space-y-8 relative z-10" id="contactForm">
                 <!-- Heading -->
                 <div class="text-center">
                     <h3 class="text-2xl font-semibold text-blue-800 font-poppins">
@@ -424,6 +428,38 @@
 
     <script src="javascript/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+
+    <script>
+        emailjs.init('vNxo2XG6oyoU2aodv'); // Replace with your EmailJS User ID
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target); // Get form data
+            const serviceID = 'service_imihff8'; // Replace with your EmailJS service ID
+            const templateID = 'template_cpah6p7'; // Replace with your EmailJS template ID
+
+            emailjs.send(serviceID, templateID, {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                contact: formData.get('contact'),
+                services: formData.get('services'),
+                description: formData.get('description'),
+            }).then(() => {
+                alert('Your message has been sent successfully!');
+                e.target.reset(); // Reset the form fields
+            }).catch((err) => {
+                alert('Failed to send your message. Please try again.');
+                console.error('EmailJS Error:', err);
+            });
+        });
+
+
+    </script>
+
 </body>
 
 </html>
