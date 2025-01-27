@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
-<head>
+<head class="scroll-smooth">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="iPartner offers professional service partnerships to help businesses grow. Explore our services and build long-term relationships with us.">
+
     <title>ipartnerconsulting</title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="assets/ipartneringiconfore2.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="index.css">
@@ -25,7 +29,7 @@
             <div class="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
                 <div class="text-xl font-semibold">
                     <a href="index.html">
-                        <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" class="h-14">
+                        <img src="assets/ipartnerlogo_bgrey.png" alt="Logo" loading="lazy" class="h-14">
                     </a>
                 </div>
 
@@ -110,7 +114,8 @@
                 <!-- Burger Menu (Mobile) -->
                 <div class="md:hidden">
                     <button id="menu-toggle"
-                        class="text-gray-800  focus:outline-none bg-gray-200  p-2 rounded-md hover:bg-gray-300  transition-all">
+                        class="text-gray-800  focus:outline-none bg-gray-200  p-2 rounded-md hover:bg-gray-300  transition-all"
+                        aria-label="Toggle menu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -176,14 +181,16 @@
                 <a href="contactus.html" class="block px-4 py-2 hover:bg-indigo-100  shadow-sm ">Contact Us</a>
             </div>
         </header>
-
-
     </div>
 
 
-    <div class="relative w-full h-screen bg-cover bg-center -mt-20" style="background-image: url('assets/hero.jpg');">
-        <div class="absolute inset-0 bg-gray-950 bg-opacity-60 "></div>
-        <section id="hero-section"
+
+
+    <div id="hero-section" class="relative w-full h-screen bg-cover bg-center -mt-20"
+        style="background-image: url('assets/hero.jpg');" loading="lazy">
+        <div class="absolute inset-0 bg-gray-950 bg-opacity-60"></div>
+        <!-- Hero Content -->
+        <section
             class="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-8 scroll-pt-40 bg-cover bg-center bg-no-repeat rounded-lg relative">
             <!-- Text Section -->
             <div class="w-full flex flex-col items-center justify-center text-center md:mb-16 mb-10 px-4 relative"
@@ -195,8 +202,7 @@
                 <p
                     class="text-lg md:text-2xl font-Poppins bg-clip-text text-transparent text-white mt-4 leading-relaxed">
                     Welcome to a nexus of excellence and authenticity. Since 2014, we have been architecting
-                    transformative
-                    partnerships that transcend conventional boundaries…
+                    transformative partnerships that transcend conventional boundaries…
                 </p>
             </div>
 
@@ -245,10 +251,12 @@
         </section>
     </div>
 
+
+
     <!-- bg-gradient-to-b from-[#c5eaf9] to-slate-0 -->
     <!-- bg-gradient-to-r from-white via-cyan-50 to-sky-100  -->
-    <section id="service-section py-12"
-        class="bg-white px-6 rounded-lg transition-shadow duration-300 h-screen flex items-center justify-center md:mt-40 mt-28 md:pt-0 pt-16">
+    <section id="service-section"
+        class="bg-white px-6 rounded-lg transition-shadow duration-300 h-screen flex items-center justify-center md:mt-40 mt-28 md:pt-0 pt-16 py-5">
         <div class="container mx-auto text-center" data-aos="fade-up">
             <!-- Icon Wrapper -->
             <div class="flex flex-col items-center justify-center ">
@@ -320,8 +328,9 @@
     </section>
 
 
-    <section id="product-section min-h-screen"
-        class="py-12 lg:mt-0 mt-40  md:pt-7  bg-zinc-100 h-screen flex items-center justify-center" id="services">
+    <section id="product-section "
+        class="py-12 lg:mt-0 mt-40  md:pt-7  bg-zinc-100 h-screen flex items-center justify-center min-h-screen"
+        id="services">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Icon Wrapper -->
             <div class="flex flex-col items-center justify-center mb-">
@@ -343,9 +352,9 @@
             </div>
 
             <!-- Card -->
-            <div class="mt-10 flex justify-center " data-aos="fade-right">
+            <div class="mt-10 flex justify-center  " data-aos="fade-right">
                 <a href="Iass.html"
-                    class="block w-full max-w-xl bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    class="block w-full max-w-xl bg-white rounded-lg  hover:shadow-xl transition-shadow duration-300">
                     <div class="p-6 rounded-md">
                         <div class="flex items-center justify-center mb-4">
                             <img src="assets/Iaas_img.png" class="w-16 h-16" alt="IaaS">
@@ -464,7 +473,7 @@
                                     <img src="assets/testimonial-2.jpg" alt="Sarah J"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Sarah J</h5>
+                                        <h1 class="font-bold">Sarah J</h1>
                                         <span class="text-sm text-gray-500">HR Director</span>
                                     </div>
                                 </div>
@@ -489,7 +498,7 @@
                                     <img src="assets/testimonial-4.jpg" alt="Nathan B"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Nathan B</h5>
+                                        <h1 class="font-bold">Nathan B</h1>
                                         <span class="text-sm text-gray-500">Project Manager</span>
                                     </div>
                                 </div>
@@ -515,7 +524,7 @@
                                     <img src="assets/testimonial-3.jpg" alt="Emily M"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Emily M</h5>
+                                        <h1 class="font-bold">Emily M</h1>
                                         <span class="text-sm text-gray-500">Senior Manager</span>
                                     </div>
                                 </div>
@@ -541,7 +550,7 @@
                                     <img src="assets/testimonial-1.jpg" alt="Olivis R"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Olivia R</h5>
+                                        <h1 class="font-bold">Olivia R</h1>
                                         <span class="text-sm text-gray-500">Technical Director</span>
                                     </div>
                                 </div>
@@ -552,9 +561,23 @@
 
                 <!-- Dots Navigation -->
                 <div class="flex justify-center mt-8 space-x-2" id="dots">
-                    <button class="w-3 h-3 rounded-full bg-blue-900" onclick="goToSlide(0)"></button>
+                    <!-- <button class="w-3 h-3 rounded-full bg-blue-900" onclick="goToSlide(0)"></button>
                     <button class="w-3 h-3 rounded-full bg-blue-300" onclick="goToSlide(1)"></button>
-                    <button class="w-3 h-3 rounded-full bg-blue-300" onclick="goToSlide(2)"></button>
+                    <button class="w-3 h-3 rounded-full bg-blue-300" onclick="goToSlide(2)"></button> -->
+                    <button class="w-12 h-12 rounded-full bg-blue-900 mx-2" onclick="goToSlide(0)"
+                        aria-label="Go to slide 1">
+
+                    </button>
+                    <button class="w-12 h-12 rounded-full bg-blue-300 mx-2" onclick="goToSlide(1)"
+                        aria-label="Go to slide 2">
+
+                    </button>
+                    <button class="w-12 h-12 rounded-full bg-blue-300 mx-2" onclick="goToSlide(2)"
+                        aria-label="Go to slide 3">
+
+                    </button>
+
+
                 </div>
             </div>
         </div>
@@ -580,45 +603,56 @@
                 <div class="grid grid-cols-3 gap-4 md:hidden">
                     <!-- First Row: 3 Logos -->
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/Altimetrik.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/Altimetrik.png" alt="Altimetrik Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/HCL-Logo.png" alt="HCL Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/virtusa-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/virtusa-logo.webp" alt="Virtusa Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
 
                     <!-- Second Row: 3 Logos -->
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/quest-logo.webp" alt="Quest Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        <img src="assets/ontario.png" alt="Ontario Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-luminosity">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/NB.png" alt="New Brunswick Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
 
                     <!-- Third Row: New Logos -->
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/british-columbia.png"
+                        <img src="assets/british-columbia.png" alt="British Columbia Logo"
                             class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/extendicare.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/extendicare.png" alt="Extendicare Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/newfoundland.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/newfoundland.jpeg" alt="Newfoundland Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/novascotia.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/novascotia.jpg" alt="Nova Scotia Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/oxford-living.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/oxford-living.jpg" alt="Oxford Living Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/sienna.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/sienna.jpeg" alt="Sienna Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                 </div>
 
@@ -627,54 +661,62 @@
                     <!-- Original logos -->
                     <div class="flex min-w-full justify-around gap-4">
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/Altimetrik.png"
+                            <img src="assets/Altimetrik.png" alt="Altimetrik Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-luminosity">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/HCL-Logo.png" alt="HCL Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/virtusa-logo.webp"
+                            <img src="assets/virtusa-logo.webp" alt="Virtusa Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-overlay">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/quest-logo.webp" alt="Quest Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                            <img src="assets/ontario.png" alt="Ontario Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-luminosity">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/NB.png" alt="New Brunswick Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                     </div>
 
                     <!-- New logos -->
                     <div class="flex min-w-full justify-around gap-4">
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/british-columbia.png"
+                            <img src="assets/british-columbia.png" alt="British Columbia Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/extendicare.png" class="w-full h-full object-contain p-1 mix-blend-normal">
-                        </div>
-                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/newfoundland.jpeg"
+                            <img src="assets/extendicare.png" alt="Extendicare Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/novascotia.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
-                        </div>
-                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/oxford-living.jpg"
+                            <img src="assets/newfoundland.jpeg" alt="Newfoundland Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/sienna.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/novascotia.jpg" alt="Nova Scotia Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
+                            <img src="assets/oxford-living.jpg" alt="Oxford Living Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
+                            <img src="assets/sienna.jpeg" alt="Sienna Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -739,9 +781,9 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6">
 
                         <div class="mb-4 flex flex-col items-start">
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl  ">
+                            <h1 class="text-uppercase font-sans font-medium text-white text-xl  ">
                                 iPartner
-                                Consulting</h6>
+                                Consulting</h1>
                             <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
                                 <li><a href="#hero-section" class="text-white ">Home</a></li>
                                 <li><a href="Aboutus.html" class="text-white">About US</a></li>
@@ -755,9 +797,9 @@
 
                         <div class="mb-4 flex flex-col items-start">
 
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
+                            <h1 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
-                                Products</h6>
+                                Products</h1>
                             <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
                                 <li> <a href="ITProfessional.html" class="text-white">IT & Professional Staffing</a>
                                 </li>
@@ -880,7 +922,7 @@
             }
         );
     </script>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 

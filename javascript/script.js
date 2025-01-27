@@ -11,16 +11,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // AOS.init();
 
+// document.getElementById("menu-toggle").addEventListener("click", function () {
+//   const mobileMenu = document.getElementById("mobile-menu");
+//   mobileMenu.classList.toggle("hidden");
+// });
+
+// document.querySelectorAll("#mobile-menu a").forEach((link) => {
+//   link.addEventListener("click", function () {
+//     document.getElementById("mobile-menu").classList.add("hidden");
+//   });
+// });
+
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobile-menu");
+  const heroSection = document.getElementById("hero-section");
+
+  // Toggle the menu visibility
   mobileMenu.classList.toggle("hidden");
+
+  // Adjust the hero section margin based on the menu visibility
+  if (!mobileMenu.classList.contains("hidden")) {
+    heroSection.classList.remove("-mt-20");
+    heroSection.classList.add("mt-0");
+  } else {
+    heroSection.classList.remove("mt-0");
+    heroSection.classList.add("-mt-20");
+  }
 });
 
+// Hide the menu and reset the hero section margin when a link is clicked
 document.querySelectorAll("#mobile-menu a").forEach((link) => {
   link.addEventListener("click", function () {
-    document.getElementById("mobile-menu").classList.add("hidden");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const heroSection = document.getElementById("hero-section");
+
+    mobileMenu.classList.add("hidden");
+    heroSection.classList.remove("mt-0");
+    heroSection.classList.add("-mt-20");
   });
 });
+
 
 // Desktop Dropdown Toggling
 function toggleDesktopDropdown(dropdownId, arrowId) {

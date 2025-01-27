@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <title></title>
@@ -101,6 +101,17 @@
                     class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap text-xl">
                     <img src="assets/contact_us.png" class="h-8 w-8 animate-ring" alt="Contact Us">
                 </a>
+                <!-- <a href="contactus.html" class="hover:text-blue-900 transition-all duration-300 whitespace-nowrap text-xl">
+                    <img 
+                        src="assets/contact_us.png" 
+                        alt="Contact Us" 
+                        class="h-8 w-8 md:h-10 md:w-10 animate-ring" 
+                        width="32" 
+                        height="32"
+                        srcset="assets/contact_us.png 1x, assets/contact_us@2x.png 2x" 
+                    >
+                </a> -->
+
             </nav>
 
 
@@ -432,7 +443,7 @@
                                     <img src="assets/testimonial-2.jpg" alt="Sarah J"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Sarah J</h5>
+                                        <h1 class="font-bold">Sarah J</h1>
                                         <span class="text-sm text-gray-500">HR Director</span>
                                     </div>
                                 </div>
@@ -457,7 +468,7 @@
                                     <img src="assets/testimonial-4.jpg" alt="Nathan B"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Nathan B</h5>
+                                        <h1 class="font-bold">Nathan B</h1>
                                         <span class="text-sm text-gray-500">Project Manager</span>
                                     </div>
                                 </div>
@@ -483,7 +494,7 @@
                                     <img src="assets/testimonial-3.jpg" alt="Emily M"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Emily M</h5>
+                                        <h1 class="font-bold">Emily M</h1>
                                         <span class="text-sm text-gray-500">Senior Manager</span>
                                     </div>
                                 </div>
@@ -509,7 +520,7 @@
                                     <img src="assets/testimonial-1.jpg" alt="Olivis R"
                                         class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h5 class="font-bold">Olivia R</h5>
+                                        <h1 class="font-bold">Olivia R</h1>
                                         <span class="text-sm text-gray-500">Technical Director</span>
                                     </div>
                                 </div>
@@ -520,9 +531,19 @@
 
                 <!-- Dots Navigation -->
                 <div class="flex justify-center mt-8 space-x-2" id="dots">
-                    <button class="w-3 h-3 rounded-full bg-blue-900" onclick="goToSlide(0)"></button>
-                    <button class="w-3 h-3 rounded-full bg-blue-300" onclick="goToSlide(1)"></button>
-                    <button class="w-3 h-3 rounded-full bg-blue-300" onclick="goToSlide(2)"></button>
+                    <button class="w-12 h-12 rounded-full bg-blue-900 mx-2" onclick="goToSlide(0)"
+                        aria-label="Go to slide 1">
+
+                    </button>
+                    <button class="w-12 h-12 rounded-full bg-blue-300 mx-2" onclick="goToSlide(1)"
+                        aria-label="Go to slide 2">
+
+                    </button>
+                    <button class="w-12 h-12 rounded-full bg-blue-300 mx-2" onclick="goToSlide(2)"
+                        aria-label="Go to slide 3">
+
+                    </button>   
+
                 </div>
             </div>
         </div>
@@ -549,46 +570,57 @@
                 <!-- Mobile View: Static Grid -->
                 <div class="grid grid-cols-3 gap-4 md:hidden">
                     <!-- First Row: 3 Logos -->
-                    <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/Altimetrik.png" class="w-full h-full object-contain p-1 mix-blend-color">
+                    <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
+                        <img src="assets/Altimetrik.png" alt="Altimetrik Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/HCL-Logo.png" alt="HCL Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/virtusa-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/virtusa-logo.webp" alt="Virtusa Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
 
                     <!-- Second Row: 3 Logos -->
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/quest-logo.webp" alt="Quest Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                        <img src="assets/ontario.png" alt="Ontario Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-luminosity">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/NB.png" alt="New Brunswick Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
 
                     <!-- Third Row: New Logos -->
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/british-columbia.png"
+                        <img src="assets/british-columbia.png" alt="British Columbia Logo"
                             class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/extendicare.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/extendicare.png" alt="Extendicare Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/newfoundland.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/newfoundland.jpeg" alt="Newfoundland Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/novascotia.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/novascotia.jpg" alt="Nova Scotia Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/oxford-living.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/oxford-living.jpg" alt="Oxford Living Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                     <div class="col-span-1 p-2 rounded-md shadow-lg flex items-center justify-center w-full h-24">
-                        <img src="assets/sienna.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                        <img src="assets/sienna.jpeg" alt="Sienna Logo"
+                            class="w-full h-full object-contain p-1 mix-blend-normal">
                     </div>
                 </div>
 
@@ -597,54 +629,62 @@
                     <!-- Original logos -->
                     <div class="flex min-w-full justify-around gap-4">
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/Altimetrik.png"
+                            <img src="assets/Altimetrik.png" alt="Altimetrik Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-luminosity">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/HCL-Logo.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/HCL-Logo.png" alt="HCL Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/virtusa-logo.webp"
+                            <img src="assets/virtusa-logo.webp" alt="Virtusa Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-overlay">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/quest-logo.webp" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/quest-logo.webp" alt="Quest Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/ontario.png" class="w-full h-full object-contain p-1 mix-blend-luminosity">
+                            <img src="assets/ontario.png" alt="Ontario Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-luminosity">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/NB.png" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/NB.png" alt="New Brunswick Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                     </div>
 
                     <!-- New logos -->
                     <div class="flex min-w-full justify-around gap-4">
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/british-columbia.png"
+                            <img src="assets/british-columbia.png" alt="British Columbia Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/extendicare.png" class="w-full h-full object-contain p-1 mix-blend-normal">
-                        </div>
-                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/newfoundland.jpeg"
+                            <img src="assets/extendicare.png" alt="Extendicare Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/novascotia.jpg" class="w-full h-full object-contain p-1 mix-blend-normal">
-                        </div>
-                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/oxford-living.jpg"
+                            <img src="assets/newfoundland.jpeg" alt="Newfoundland Logo"
                                 class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                         <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
-                            <img src="assets/sienna.jpeg" class="w-full h-full object-contain p-1 mix-blend-normal">
+                            <img src="assets/novascotia.jpg" alt="Nova Scotia Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
+                            <img src="assets/oxford-living.jpg" alt="Oxford Living Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
+                        </div>
+                        <div class="p-2 rounded-md shadow-lg w-64 h-32 flex items-center justify-center relative">
+                            <img src="assets/sienna.jpeg" alt="Sienna Logo"
+                                class="w-full h-full object-contain p-1 mix-blend-normal">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -723,9 +763,9 @@
 
                         <div class="mb-4 flex flex-col items-start">
 
-                            <h6 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
+                            <h1 class="text-uppercase font-sans font-medium text-white text-xl pt-1 ">
 
-                                Products</h6>
+                                Products</h1>
                             <ul class="space-y-2 pl-0 pt-2 ml-0 text-left">
                                 <li> <a href="ITProfessional.html" class="text-white">IT & Professional Staffing</a>
                                 </li>
@@ -805,7 +845,7 @@
         <!-- Footer -->
     </section>
 
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
 </body>
 
 </html>
