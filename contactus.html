@@ -434,37 +434,6 @@
     <script src="javascript/script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-
-
-    <!-- <script>
-        emailjs.init('vNxo2XG6oyoU2aodv'); // Replace with your EmailJS User ID
-
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(e.target); // Get form data
-            const serviceID = 'service_imihff8'; // Replace with your EmailJS service ID
-            const templateID = 'template_cpah6p7'; // Replace with your EmailJS template ID
-
-            emailjs.send(serviceID, templateID, {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                contact: formData.get('contact'),
-                services: formData.get('services'),
-                description: formData.get('description'),
-            }).then(() => {
-                alert('Your message has been sent successfully!');
-                e.target.reset(); // Reset the form fields
-            }).catch((err) => {
-                alert('Failed to send your message. Please try again.');
-                console.error('EmailJS Error:', err);
-            });
-        });
-
-
-    </script> -->
-
 </body>
 
 </html>
