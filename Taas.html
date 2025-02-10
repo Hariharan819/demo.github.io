@@ -11,7 +11,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title></title>
+    <script type="text/javascript">
+        "use strict"; class WebTracker { key = "mr"; config; xhr = new XMLHttpRequest; storage = { sessionStorage: { process: this.getStatementFromSession(), generate: e => { this.addStatementToSession(e) } }, localStorage: { process: this.getStatementFromLocal(), generate: e => { this.addStatementToLocal(e) } } }; constructor(e) { this.config = e } init() { this.getStatement() } track(e) { if (window.performance.getEntriesByType("navigation")) { const t = window.performance.getEntriesByType("navigation")[0].type; if ("navigate" == t || "reload" == t) { let t = { userId: e.user.uuid, sessionId: e.session.uuid, viewId: e.view.uuid, date: new Date, locale: navigator.language, platform: navigator.userAgentData ? navigator.userAgentData : navigator.platform, url: window.location.href, referrer: document.referrer, title: document.title }; this.xhr.open("POST", this.config.baseUrl, !0), this.xhr.setRequestHeader("Content-Type", "application/json"), this.xhr.onload = () => { 200 != this.xhr.status && 201 != this.xhr.status || this.ping(e) }, this.xhr.onerror = e => { console.log("Track request:", e) }, this.xhr.send(JSON.stringify(t)) } } } ping(e) { let t = { sessionId: e.session.uuid, viewId: e.view.uuid }, i = !0; setInterval((() => { i && (i = !1, this.xhr.open("POST", this.config.baseUrl + "/pvping", !0), this.xhr.setRequestHeader("Content-Type", "application/json"), this.xhr.onload = () => { i = !0 }, this.xhr.onerror = e => { console.log("Ping request:", e) }, this.xhr.send(JSON.stringify(t))) }), 1e4) } getStatement() { new Promise(((e, t) => { for (let t in this.storage) { let i = this.storage[t].process; if (i) { e(i); break } } t(!0) })).then((e => { this.checkStatement(JSON.parse(e)), this.track(JSON.parse(e)) })).catch((() => { let e = this.prepearNewStatement(); this.checkStatement(e), this.track(e) })) } checkStatement(e) { setInterval((() => { let t = new Date; if (e.session) { let i = e.session.expire; new Date(i) < t && (e.session = { uuid: this.generateUuid(), expire: new Date(Date.now() + this.config.session.expire) }, this.prepearNewStatement(e)) } }), 6e4), e.view && (e.view = { uuid: this.generateUuid(), expire: new Date }, this.prepearNewStatement(e)) } addStatementToSession(e) { sessionStorage.setItem(this.key, JSON.stringify(e)) } addStatementToLocal(e) { localStorage.setItem(this.key, JSON.stringify(e)) } getStatementFromSession() { let e = sessionStorage.getItem(this.key); return e || !1 } getStatementFromLocal() { let e = localStorage.getItem(this.key); return e || !1 } generateUuid() { return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (e => (e ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> e / 4).toString(16))) } prepearNewStatement(e) { void 0 === e && (e = { user: { uuid: this.generateUuid(), expire: null }, session: { uuid: this.generateUuid(), expire: new Date(Date.now() + this.config.session.expire) }, view: { uuid: this.generateUuid(), expire: this.config.view.expire } }); for (let t in this.storage) this.storage[t].generate(e); return e } } function initializeTracker(e) { console.log("--- Tracker on ---"); var t = document.location.href; window.onload = function () { var e = document.querySelector("body"); new MutationObserver((function (e) { e.forEach((function (e) { t != document.location.href && (t = document.location.href) })) })).observe(e, { childList: !0, subtree: !0 }) }, window.onpopstate = function (e) { }; new WebTracker({ baseUrl: "https://app.mightyrep.com/api/tracking/" + e, user: { expire: null }, session: { expire: 216e5 }, view: { expire: 0 } }).init() }
+        window.onload = function () {
+            initializeTracker("67a279e92a41249a6389145e")
+        }
+    </script>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
                     class="hover:text-teal-200 transition-all duration-300 whitespace-nowrap text-xl  ">
                     <img src="assets/home.png" class="h-6 w-6 grid-r" alt=""></a>
                 <a href="Aboutus.html"
-                    class="hover:text-blue-900  transition-all duration-300 whitespace-nowrap  text-xl">About
+                    class="hover:text-blue-900  transition-all  duration-300 whitespace-nowrap  text-xl">About
                     Us</a>
 
                 <!-- Services Dropdown with Arrow -->
@@ -787,7 +792,7 @@
                                         class="text-white"> <i class="fab fa-linkedin"></i> Linkedin</a>
                                 </li>
 
-                                
+
                             </ul>
                         </div>
 
@@ -798,7 +803,7 @@
                                 Contact</h6>
                             <ul class="space-y-2  pt-2 text-left">
 
-                                
+
                                 <li>
                                     <p class="text-white"><i
                                             class="fas fa-envelope mr-3"></i>info@ipartnerconsulting.com</p>
